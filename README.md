@@ -1,1 +1,1 @@
-# ieeeuci.github.io
+# ieee-uci.github.io
