@@ -1,0 +1,9 @@
+body{
+    background-color: #2E6CC3;
+}
+
+.logo{
+    max-width: 200px;
+    max-height: 250px;
+    cursor: pointer;
+}
