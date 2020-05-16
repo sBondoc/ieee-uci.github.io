@@ -3,7 +3,15 @@ body{
 }
 
 .logo{
-    max-width: 200px;
-    max-height: 250px;
+    max-width: 10%;
+    max-height: 5%;
     cursor: pointer;
+}
+
+.homebody{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+    max-height: 40%;
 }
