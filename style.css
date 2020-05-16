@@ -1,6 +1,11 @@
 body{
     background-color: #2E6CC3;
 }
+
+.topbar{
+    margin-top: 2%;
+}
+
 .logo{
     max-width: 15%;
     max-height: 7.5%;
