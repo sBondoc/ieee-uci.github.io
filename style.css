@@ -37,9 +37,40 @@ button{
 button:hover{
     cursor:pointer; 
     color: #d3d3d3;
-    background-color: #2e4cc3;
 }
 
 .fa-caret-up{
     transform: rotate(180deg);
+}
+
+.intro{
+    margin-top: 10%;
+}
+
+.brace{
+    max-width: 85%;
+    max-height: 10%;
+}
+
+.introtext{
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.topbrace{
+    float: right;
+    margin-left: 100%;
+    margin-bottom: 2.5%;
+    margin-right: -0.5%;
+}
+
+.bottombrace{
+    float: left;
+    margin-right:100%;
+    margin-top: -2.5%;
+    margin-left: -0.5%;
 }
