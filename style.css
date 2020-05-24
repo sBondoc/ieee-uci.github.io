@@ -23,9 +23,8 @@ body{
 
 .buttondiv{
     float: right;
-    margin-top: 0.5%;
-    margin-right: 2%;
-    width: 55%;
+    margin-right: 5%;
+    margin-top: 2%;
 }
 
 .button{
@@ -35,10 +34,10 @@ body{
     border:none;
     padding: 2%;
     margin-top: 1%;
-    margin-left: 20%;
+    margin-left: 12%;
     font-size: 20px;
     outline: none;
-    width: 16%;
+    min-width: 110%;
 }
 
 button:hover{
@@ -46,24 +45,10 @@ button:hover{
     color: #d3d3d3;
 }
 
-.leftdropdiv{
-    margin-left: 3%;
-}
-
-.rightdropdiv{
-   margin-left: 5.5%;
-   margin-right: -10%;
-
-}
-
-.dropbtn{
-    width: 100%;
-}
-
-
 .dropdown {
     position: relative;
     display: inline-block;
+    top: 10%;
 }
 
 .dropdown-content {
@@ -94,6 +79,7 @@ button:hover{
 .fa-caret-up{
     transform: rotate(180deg);
 }
+
 
 .intro{
     margin-top: 10%;

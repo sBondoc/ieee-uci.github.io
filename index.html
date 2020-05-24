@@ -12,14 +12,9 @@
     <div class="topbar">
         <img src="images/IEEUCILogo.png" onclick="window.location.href ='https://ieee-uci.github.io/';" alt="Logo" class="logo">
         <div class="buttondiv">
-            <button onclick="window.location.href = 'https://ieee-uci.github.io';" class="button">HOME</button>
-            <div class="leftdropdiv dropdown">
-                <button class="button dropbtn" onclick="getAboutDrop()">ABOUT <i class="fas fa-caret-up"></i></button> 
-                <div id="myAboutDrop" class="aboutDrop dropdown-content">
-                    <a href="https://ieee-uci.github.io/about/board">Meet Our Board</a>
-                    <a href="https://ieee-uci.github.io/about/who">Who Are We?</a>
-                </div>
-            </div>
+            <button onclick="window.location.href ='https://ieee-uci.github.io/events';" class="button">EVENTS</button> 
+        </div>
+        <div class="buttondiv">
             <div class="rightdropdiv dropdown">
                 <button class="button dropbtn" onclick="getProjDrop()">PROJECTS <i class="fas fa-caret-up"></i></button>
                 <div id="myProjDrop" class="projDrop dropdown-content">
@@ -27,7 +22,18 @@
                     <a href="https://ieee-uci.github.io/projects/arcade">Arcade Machine</a>
                 </div>
             </div>
-            <button onclick="window.location.href ='https://ieee-uci.github.io/events';" class="button">EVENTS</button> 
+        </div>
+        <div class="buttondiv">
+            <div class="leftdropdiv dropdown">
+                <button class="button dropbtn" onclick="getAboutDrop()">ABOUT <i class="fas fa-caret-up"></i></button> 
+                <div id="myAboutDrop" class="aboutDrop dropdown-content">
+                    <a href="https://ieee-uci.github.io/about/board">Meet Our Board</a>
+                    <a href="https://ieee-uci.github.io/about/who">Who Are We?</a>
+                </div>
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button onclick="window.location.href = 'https://ieee-uci.github.io';" class="button">HOME</button>
         </div>
     </div>
     <div class="homemain">
