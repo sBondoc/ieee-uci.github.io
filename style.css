@@ -38,7 +38,9 @@ body{
     margin-left: 20%;
     font-size: 20px;
     outline: none;
+    width: 15%;
 }
+
 button:hover{
     cursor:pointer; 
     color: #d3d3d3;
