@@ -23,9 +23,9 @@ body{
 
 .buttondiv{
     float: right;
-    margin-right: -7.5%;
     margin-top: 0.5%;
-    width: 50%;
+    margin-right: 2%;
+    width: 55%;
 }
 
 .button{
@@ -35,8 +35,7 @@ body{
     border:none;
     padding: 2%;
     margin-top: 1%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
     font-size: 20px;
     outline: none;
 }
@@ -46,12 +45,13 @@ button:hover{
 }
 
 .leftdropdiv{
-    margin-left: -5.5%;
+    margin-left: 3%;
 }
 
 .rightdropdiv{
    margin-left: 5.5%;
-   margin-right: -3%;
+   margin-right: -10%;
+
 }
 
 .dropbtn{
