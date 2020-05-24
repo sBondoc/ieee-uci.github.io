@@ -23,7 +23,7 @@ body{
 
 .buttondiv{
     float: right;
-    margin-right: -5.5%;
+    margin-right: -7.5%;
     margin-top: 0.5%;
     width: 50%;
 }
@@ -46,11 +46,12 @@ button:hover{
 }
 
 .leftdropdiv{
-    margin-left: -5%;
+    margin-left: -5.5%;
 }
 
 .rightdropdiv{
-   margin-left: 5%;
+   margin-left: 5.5%;
+   margin-right: -3%;
 }
 
 .dropbtn{
@@ -64,19 +65,20 @@ button:hover{
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    font-family: 'Source Code Pro', monospace;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover{
