@@ -21,51 +21,66 @@ body{
     max-height: 40%;
 }
 
+.buttondiv{
+    float: right;
+    margin-right: -5.5%;
+    margin-top: 0.5%;
+    width: 50%;
+}
+
 .button{
     font-family: 'Source Code Pro', monospace;
     color: white;
     background-color: transparent;
     border:none;
-    padding: 1%;
+    padding: 2%;
     margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 20px;
     outline: none;
-    float: right;
 }
 button:hover{
     cursor:pointer; 
     color: #d3d3d3;
 }
- 
-.dropdown{
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 7%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-top: 4%;
+
+.leftdropdiv{
+    margin-left: -5%;
 }
 
-.projDrop{
-    margin-left: 79.5%;
-}
-.aboutDrop{
-    margin-left: 69.5%;
+.rightdropdiv{
+   margin-left: 5%;
 }
 
-.dropdown a{
-    font-family: 'Source Code Pro', monospace;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.dropbtn{
+    width: 100%;
 }
 
-.dropdown a:hover{
-    background-color: #ddd
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #ddd;
 }
 
 .show{

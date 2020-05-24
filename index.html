@@ -6,23 +6,29 @@
     <title>IEEE@UCI Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7f04ea1932.js" crossorigin="anonymous"></script>
-  <script src="script.js" type="text/javascript"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="topbar">
         <img src="images/IEEUCILogo.png" onclick="window.location.href ='https://ieee-uci.github.io/';" alt="Logo" class="logo">
-        <button onclick="window.location.href ='https://ieee-uci.github.io/events';" class="button">EVENTS</button> 
-        <button class="button dropbtn" onclick="getProjDrop()">PROJECTS <i class="fas fa-caret-up"></i></button>
-        <div id="myProjDrop" class="projDrop dropdown">
-            <a href="https://ieee-uci.github.io/projects/micromouse">Micromouse</a>
-            <a href="https://ieee-uci.github.io/projects/arcade">Arcade Machine</a>
+        <div class="buttondiv">
+            <button onclick="window.location.href = 'https://ieee-uci.github.io';" class="button">HOME</button>
+            <div class="leftdropdiv dropdown">
+                <button class="button dropbtn" onclick="getAboutDrop()">ABOUT <i class="fas fa-caret-up"></i></button> 
+                <div id="myAboutDrop" class="aboutDrop dropdown-content">
+                    <a href="https://ieee-uci.github.io/about/board">Meet Our Board</a>
+                    <a href="https://ieee-uci.github.io/about/who">Who Are We?</a>
+                </div>
+            </div>
+            <div class="rightdropdiv dropdown">
+                <button class="button dropbtn" onclick="getProjDrop()">PROJECTS <i class="fas fa-caret-up"></i></button>
+                <div id="myProjDrop" class="projDrop dropdown-content">
+                    <a href="https://ieee-uci.github.io/projects/micromouse">Micromouse</a>
+                    <a href="https://ieee-uci.github.io/projects/arcade">Arcade Machine</a>
+                </div>
+            </div>
+            <button onclick="window.location.href ='https://ieee-uci.github.io/events';" class="button">EVENTS</button> 
         </div>
-        <button class="button dropbtn" onclick="getAboutDrop()">ABOUT <i class="fas fa-caret-up"></i></button> 
-        <div id="myAboutDrop" class="aboutDrop dropdown">
-            <a href="https://ieee-uci.github.io/about/board">Meet Our Board</a>
-            <a href="https://ieee-uci.github.io/about/who">Who Are We?</a>
-        </div>
-        <button onclick="window.location.href = 'https://ieee-uci.github.io';" class="button">HOME</button>
     </div>
     <div class="homemain">
         <img src="images/advanceLogo.png" alt="Main Page" class="homebody">
