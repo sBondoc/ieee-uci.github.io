@@ -21,7 +21,7 @@ body{
     max-height: 40%;
 }
 
-button{
+.button{
     font-family: 'Source Code Pro', monospace;
     color: white;
     background-color: transparent;
@@ -229,4 +229,14 @@ input[type=text]{
     margin-bottom: 8px;
     margin-right: 20%;
     padding-right: 5%;
+}
+
+.submit{
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    background-color: transparent;
+    border: 0.5px solid white;
+    font-size: 20px;
+    margin-left: 0;
+    margin-bottom: 4%;
 }
