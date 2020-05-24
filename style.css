@@ -118,14 +118,19 @@ button:hover{
     text-align: center;
 }
 
+.wscFirst, .wscSecond, .wscThird{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 1.5%;
+}
+
 .wscFirst{
     float: center;
     margin: 0 auto;
-    padding-bottom: 2%;
     margin-top: 5%;
     max-width: 32%;
-    border: 1px solid white;
-    background-color: white;
 }
 
 .wscSecond{
@@ -133,9 +138,6 @@ button:hover{
     max-width: 22%;
     margin-top: 10%;
     margin-left: 5%;
-    padding-bottom: 2%;
-    border: 1px solid white;
-    background-color: white;
 }
 
 .wscThird{
@@ -143,20 +145,33 @@ button:hover{
     max-width: 19%;
     margin-top: 10%;
     margin-right: 7%;
-    padding-bottom: 2%;
-    border: 1px solid white;
-    background-color: white;
 }
 
-
-.wscpic1{
+.wscpic1, .wscpic2, .wscpic3{
     max-width: 100%;
 }
 
-.wscpic2{
-    max-width: 100%;
+
+.wscs1, .wscs2{
+    margin-top: 3%;
 }
 
-.wscpic3{
-    max-width: 100%;
+.wscs1{
+    float: center;
+    margin-left: 34%;
+    margin-right: 34%;
+    margin-top: 0%;
+    max-width: 32%
+}
+
+.wscs2{
+    float: left;
+    max-width: 22%;
+    margin-left: 5%;
+}
+
+.wscs3{
+    float: right;
+    max-width: 19%;
+    margin-right: 7%;
 }
