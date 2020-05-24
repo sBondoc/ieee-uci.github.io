@@ -12,12 +12,16 @@
     <div class="topbar">
         <img src="images/IEEUCILogo.png" onclick="window.location.href ='https://ieee-uci.github.io/';" alt="Logo" class="logo">
         <button onclick="window.location.href ='https://ieee-uci.github.io/';" class="button">EVENTS</button> 
-        <button class="button dropbtn" onclick="myFunction()">PROJECTS <i class="fas fa-caret-up"></i></button>
-        <div id="myProjDrop" class="projDrop">
+        <button class="button dropbtn" onclick="getProjDrop()">PROJECTS <i class="fas fa-caret-up"></i></button>
+        <div id="myProjDrop" class="projDrop dropdown">
             <a href="https://ieee-uci.github.io/projects/micromouse">Micromouse</a>
             <a href="">Arcade Machine</a>
         </div>
-        <button class="button">ABOUT <i class="fas fa-caret-up"></i></button> 
+        <button class="button dropbtn" onclick="getAboutDrop()">ABOUT <i class="fas fa-caret-up"></i></button> 
+        <div id="myAboutDrop" class="aboutDrop dropdown">
+            <a href="https://ieee-uci.github.io/projects/micromouse">Meet Our Board</a>
+            <a href="">Who Are We?</a>
+        </div>
         <button onclick="window.location.href = 'https://ieee-uci.github.io';" class="button">HOME</button>
     </div>
     <div class="homemain">
