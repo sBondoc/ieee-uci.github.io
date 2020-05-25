@@ -210,8 +210,8 @@ button:hover{
 .newsletter{
     float: right;
     margin-top: -3%;
-    margin-right: -2%;
-    width: 40%;
+    margin-right: 7%;
+    width: 30%;
     color: white;
     font-family: 'Source Code Pro', monospace;
     color: white;
@@ -220,9 +220,8 @@ button:hover{
 input[type=text]{
     font-family: 'Source Code Pro', monospace;
     color: white;
-    width: 75%;
+    width: 100%;
     margin-bottom: 8px;
-    margin-right: 20%;
     margin-left: 4%;
     padding-right: 5%;
     border: hidden;
@@ -230,10 +229,9 @@ input[type=text]{
 }
 
 .textentry{
-    width: 75%;
+    width: 100%;
     margin-top: -4%;
     margin-bottom: 8px;
-    margin-right: 20%;
     padding-right: 5%;
 }
 
