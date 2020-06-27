@@ -244,3 +244,8 @@ input[type=text]{
     margin-left: 0;
     margin-bottom: 4%;
 }
+
+input[type=text]{
+    width: 83%;
+    outline: none;
+}
