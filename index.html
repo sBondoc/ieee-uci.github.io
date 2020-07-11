@@ -3,46 +3,50 @@
   <head>
     <link type="text/css" rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE@UCI Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7f04ea1932.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="topgap"></div>
-    <div class="topbar">
-        <img src="images/ieee_uci_logo_trans_white.png" onclick="window.location.href ='https://ieee-uci.github.io/';" alt="Logo" class="logo">
-        <div class="buttondiv">
-            <button onclick="window.location.href ='https://ieee-uci.github.io/events';" class="button">EVENTS</button>
-        </div>
-        <div class="buttondiv">
-            <div class="rightdropdiv dropdown">
-                <button class="button dropbtn" onclick="getProjDrop()">PROJECTS <i class="fas fa-caret-up"></i></button>
-                <div id="myProjDrop" class="projDrop dropdown-content">
-                    <a href="https://ieee-uci.github.io/projects/micromouse">Micromouse</a>
-                    <a href="https://ieee-uci.github.io/projects/arcade">Arcade Machine</a>
-                </div>
-            </div>
-        </div>
-        <div class="buttondiv">
-            <div class="leftdropdiv dropdown">
-                <button class="button dropbtn" onclick="getAboutDrop()">ABOUT <i class="fas fa-caret-up"></i></button>
-                <div id="myAboutDrop" class="aboutDrop dropdown-content">
-                    <a href="https://ieee-uci.github.io/about/board">Meet Our Board</a>
-                    <a href="https://ieee-uci.github.io/about/who">Who Are We?</a>
-                </div>
-            </div>
-        </div>
-        <div class="buttondiv">
-            <button onclick="window.location.href = 'https://ieee-uci.github.io';" class="button">HOME</button>
-        </div>
+    <div class="topgap">
     </div>
+    <nav class="topbar">
+          <img src="images/ieee_uci_logo_trans_white.png" onclick="window.location.href ='https://ieee-uci.github.io/';" alt="Logo" class="logo">
+          <ul>
+            <li>
+              <a href ="https://ieee-uci.github.io/events" class="button">EVENTS</a>
+            </li>
+            <li>
+              <div class="rightdropdiv dropdown">
+                  <button class="button dropbtn" onclick="getProjDrop()">PROJECTS <i class="fas fa-caret-up"></i></button>
+                  <div id="myProjDrop" class="projDrop dropdown-content">
+                      <a href="https://ieee-uci.github.io/projects/micromouse">Micromouse</a>
+                      <a href="https://ieee-uci.github.io/projects/arcade">Arcade Machine</a>
+                    </div>
+              </div>
+            </li>
+            <li>
+              <div class="leftdropdiv dropdown">
+                  <button class="button dropbtn" onclick="getAboutDrop()">ABOUT <i class="fas fa-caret-up"></i></button>
+                    <div id="myAboutDrop" class="aboutDrop dropdown-content">
+                      <a href="https://ieee-uci.github.io/about/board">Meet Our Board</a>
+                      <a href="https://ieee-uci.github.io/about/who">Who Are We?</a>
+                    </div>
+                  </div>
+            </li>
+            <li>
+              <a href = "https://ieee-uci.github.io" class="button">HOME</a>
+            </li>
+          </ul>
+    </nav>
     <div class="homemain">
         <img src="images/robot_hand.jpg" alt="Main Page" class="homebody">
         <div class="advance-text">ADVANCING TECHNOLOGY FOR HUMANITY</div>
     </div>
     <div class="intro">
-        <img src="images/textBrace.png" alt="Brace" class="topbrace brace">
+        <img src="images/textBrace.png" width="180px" alt="Brace" class="topbrace brace">
         <p class="introtext"> IEEE at UC Irvine is a student organization dedicated to providing students opportunities to gain hands-on experience with projects in preparation for the real-world. Through our organization, student will be able to explore the field of engineering and hone new skills that are fundamental to developing state-of-the-art technology.  Our organization is dedicated to making students be the succesful engineer they envision themselves to be so that they can advance technology for humanity in their own passion. </p>
         <img src="images/textBrace.png" alt="Brace" class="bottombrace brace">
     </div>
