@@ -143,7 +143,7 @@ button:hover{
 .introtext{
     font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
@@ -164,7 +164,37 @@ button:hover{
 }
 
 .websiteComp{
-    margin-top: 10%;
+    padding-top: 30%;
+    margin-left: 5%;
+    padding-bottom: 50%;
+}
+
+.column{
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-top: 5%;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 0px;
+    text-align: left;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.card-title{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.card-image{
+    float: left;
+    margin-top: 0%;
+    margin-left: 0%;
+    max-width: 100%;
 }
 
 .wsch{
@@ -172,64 +202,6 @@ button:hover{
     color: white;
     font-size: 30px;
     text-align: center;
-}
-
-.wscFirst, .wscSecond, .wscThird{
-    font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
-    background-color: white;
-    text-align: center;
-    padding-bottom: 1.5%;
-}
-
-.wscFirst{
-    float: center;
-    margin: 0 auto;
-    margin-top: 5%;
-    max-width: 32%;
-}
-
-.wscSecond{
-    float: left;
-    max-width: 22%;
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.wscThird{
-    float: right;
-    max-width: 19%;
-    margin-top: 10%;
-    margin-right: 7%;
-}
-
-.wscpic1, .wscpic2, .wscpic3{
-    max-width: 100%;
-}
-
-
-.wscs1, .wscs2{
-    margin-top: 3%;
-}
-
-.wscs1{
-    float: center;
-    margin-left: 34%;
-    margin-right: 34%;
-    margin-top: 0%;
-    max-width: 32%
-}
-
-.wscs2{
-    float: left;
-    max-width: 22%;
-    margin-left: 5%;
-}
-
-.wscs3{
-    float: right;
-    max-width: 19%;
-    margin-right: 7%;
 }
 
 .footer{
