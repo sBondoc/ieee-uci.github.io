@@ -174,20 +174,26 @@ button:hover{
     width: 30%;
     padding: 0 10px;
     margin-top: 5%;
+    height: 100vh;
 }
 
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,4,.5);
     padding: 0px;
     text-align: left;
     background-color: #f1f1f1;
     overflow: hidden;
+    display:flex;
+    flex-direction: column;
 }
 
 .card-title{
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 2%;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .card-image{
@@ -195,6 +201,20 @@ button:hover{
     margin-top: 0%;
     margin-left: 0%;
     max-width: 100%;
+}
+
+.card-content{
+    font-family: 'Source Code Pro', monospace;
+    background-image: linear-gradient(to right, #33BFFF, #2A6AC6);
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+.card-text{
+    width: 80%;
+    padding: 10%;
 }
 
 .wsch{
