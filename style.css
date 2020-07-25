@@ -163,26 +163,35 @@ button:hover{
     margin-left: -0.5%;
 }
 
+
 .websiteComp{
-    padding-top: 30%;
-    margin-left: 5%;
-    padding-bottom: 50%;
+  padding-top: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 50%;
+  width: 60%;
+  height:auto;
+  font-family: "Console", monospace;
+  background-color: black;
+
 }
 
-.column{
-    float: left;
-    width: 30%;
-    padding: 0 10px;
+
+.row{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
     margin-top: 5%;
-    height: 100vh;
+    margin-bottom: 10%;
+    height: 100%;
 }
 
 .card{
+    position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,4,.5);
     padding: 0px;
     text-align: left;
-    background-color: #f1f1f1;
-    overflow: hidden;
+    background-image: linear-gradient(to top, #00c6fb, #005bea);
     display:flex;
     flex-direction: column;
 }
@@ -193,36 +202,74 @@ button:hover{
     text-align: left;
     padding-left: 2%;
     color: white;
-    font-family: 'Source Code Pro', monospace;
+    font-family: inherit;
 }
 
 .card-image{
-    float: left;
+    float: right;
     margin-top: 0%;
     margin-left: 0%;
-    max-width: 100%;
+    max-width: 90%;
+    filter: brightness(30%);
+    transition: all .2s ease;
 }
 
 .card-content{
-    font-family: 'Source Code Pro', monospace;
-    background-image: linear-gradient(to right, #33BFFF, #2A6AC6);
+    font-family: inherit;
+    background-image: linear-gradient(to right, #00c6fb, #005bea);
     color: white;
-    width: 100%;
-    text-align: center;
+    width: 100%;;
 
 }
 
-.card-text{
-    width: 80%;
-    padding: 10%;
+
+h3{
+      z-index: 99;
+      position: absolute;
+      bottom: -5%;
+      right: 4%;
+      font-size: 300%;
+      letter-spacing: 5px;
+      color: white;
+
 }
+
+.card-text {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      z-index: 99;
+      position: absolute;
+      left: 1%;
+      bottom: -35%;
+      font-size: 264px;
+      letter-spacing: 4px;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: white;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+}
+
 
 .wsch{
-    font-family: 'Source Code Pro', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
+    padding-bottom: 10%;
 }
+
+
+
+.card-image:hover ~ h2{
+  color: rgba(56, 54, 54, 0.966);
+}
+
+
+.card-image:hover{
+  filter: brightness(100%);
+
+}
+
 
 .footer{
     margin-top: 10%;
