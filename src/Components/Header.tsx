@@ -1,13 +1,15 @@
 import React from 'react';
 import logo from '../images/ieee_uci_logo_trans_white.png';
-import { Grid, Button } from '@material-ui/core';
+import { Grid, Button, Box } from '@material-ui/core';
 
 export default function Header() {
   return(
     <div>
-      <Grid justify="space-between">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Button style={{color: "white"}}></Button>
+      <Grid container direction="row" justify="space-between" alignItems="center">
+        <img src={logo} style={{width: "15%"}} className="App-logo" alt="logo" />
+        <Box marginRight="5%">
+          <Button>Homepage</Button>
+        </Box>
       </Grid>
     </div>
   );
