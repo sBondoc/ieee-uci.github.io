@@ -13,8 +13,14 @@ const theme = createMuiTheme({
       secondary: '#ffffff'
     },
   },
+  overrides:{
+    
+  },
   typography: {
     fontFamily: 'Source Code Pro, monospace',
+    button: {
+      fontSize: 20,
+    }
   },
 });
 
