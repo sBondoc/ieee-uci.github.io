@@ -134,6 +134,9 @@ button:hover{
 
 .intro{
     margin-top: 10%;
+    background: url(images/home_about_banner.svg);
+    background-size: 100%;
+    background-position: top;
 }
 
 .brace{
