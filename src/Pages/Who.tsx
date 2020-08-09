@@ -1,7 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
-import {Typography, Box, Grid} from '@material-ui/core';
+import {Typography, Box} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css'
 

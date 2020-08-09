@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../images/ieee_uci_logo_trans_white.png';
 import { Grid, Button, Box } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';

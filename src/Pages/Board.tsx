@@ -4,7 +4,7 @@ import boardBrace from '../images/boardBrace.png'
 import {Box} from '@material-ui/core';
 import Footer from '../Components/Footer';
 
-export default function Home() {
+export default function Board() {
 
   return(
     <div>

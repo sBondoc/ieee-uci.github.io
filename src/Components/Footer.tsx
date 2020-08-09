@@ -9,7 +9,7 @@ import linkedInIcon from '../images/linkedinicon.png';
 import textBrace from '../images/textBrace.png';
 import textEntry from '../images/textentry.png'
 import IconButton from '@material-ui/core/IconButton';
-import {Typography, Box, Grid, Button} from '@material-ui/core';
+import {Box, Grid} from '@material-ui/core';
 import '../Styles/index.css';
 
 
@@ -32,7 +32,7 @@ function SocialIcon(props: {src: string}){
   return(
     <Box className={classes.socialIconBox}>
       <IconButton className={classes.socialMediaIcon}>
-        <img width="100%" src={props.src}/>
+        <img width="100%" src={props.src} alt="socialmediaicon"/>
       </IconButton>
     </Box>
   );
@@ -60,7 +60,7 @@ export default function Footer() {
             <Box className={classes.socialIconBox}>
               <IconButton className={classes.socialMediaIcon}>
                 <a href="mailto:ieee.ucirvine@gmail.com">
-                  <img width="100%" src={emailIcon}/>
+                  <img width="100%" src={emailIcon} alt="mailicon"/>
                 </a>
               </IconButton>
             </Box>
@@ -82,9 +82,9 @@ export default function Footer() {
             >
               <h2 className="newsHead">JOIN OUR MAILING LIST:</h2>
               <form action="https://formspree.io/xlepjdlk" method="POST">
-                  <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry}/></label>
-                  <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry}/></label>
-                  <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry}/></label>
+                  <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
+                  <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>
+                  <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry} alt="lnameentry"/></label>
                   <button className="submit" type="submit">Submit</button>
               </form>
             </Grid>

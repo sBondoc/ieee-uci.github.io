@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
 import MMImage from '../images/micromouse.png';
 import PCBImage from '../images/mousepcb.jpg';
