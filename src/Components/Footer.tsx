@@ -26,12 +26,12 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function SocialIcon(props: {src: string}){
+function SocialIcon(props: {src: string, link: string}){
   const classes = useStyles();
 
   return(
     <Box className={classes.socialIconBox}>
-      <IconButton className={classes.socialMediaIcon}>
+      <IconButton className={classes.socialMediaIcon} href={props.link}>
         <img width="100%" src={props.src} alt="socialmediaicon"/>
       </IconButton>
     </Box>
@@ -64,11 +64,11 @@ export default function Footer() {
                 </a>
               </IconButton>
             </Box>
-            <SocialIcon src={fbIcon}/>
-            <SocialIcon src={twitterIcon}/>
-            <SocialIcon src={igIcon}/>
-            <SocialIcon src={snapchatIcon}/>
-            <SocialIcon src={linkedInIcon}/>
+            <SocialIcon link="https://www.facebook.com/IEEE.UCI/" src={fbIcon}/>
+            <SocialIcon link="" src={twitterIcon}/>
+            <SocialIcon link="https://www.instagram.com/ieee_uci/" src={igIcon}/>
+            <SocialIcon link="" src={snapchatIcon}/>
+            <SocialIcon link="" src={linkedInIcon}/>
           </Grid>
           
 
