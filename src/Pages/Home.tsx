@@ -26,19 +26,22 @@ const images = [
     url: kellyWeb,
     title: 'Kelly Lue',
     width: '55%',
-    place: "1"
+    place: "1",
+    webURL: "https://kellylue.github.io/"
   },
   {
     url: jackWeb,
     title: 'Jack Whittaker',
     width: '55%',
-    place: "2"
+    place: "2",
+    webURL: "https://jackw01.github.io/"
   },
   {
     url: salWeb,
     title: 'Salvador Villalon',
     width: '55%',
-    place: "3"
+    place: "3",
+    webURL: "https://salvillalon45.github.io/"
   },
   
 ];
@@ -154,6 +157,7 @@ export default function Home() {
           style={{
             width: image.width,
           }}
+          href={image.webURL}
         >
           <span
             className={classes.imageSrc}
