@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
-import mainImage from '../images/robot_hand.jpg';
+import mainImage from '../images/robot_hand.svg';
 import textBrace from '../images/textBrace.png';
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
@@ -11,14 +11,14 @@ import {Typography, Box, Grid} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css';
 
-const introText = `IEEE at UC Irvine is a student organization 
-dedicated to providing students opportunities to gain hands-on 
-experience with projects in preparation for the real-world. 
-Through our organization, student will be able to explore the 
-field of engineering and hone new skills that are fundamental to 
-developing state-of-the-art technology.  Our organization is 
+const introText = `IEEE at UC Irvine is a student organization
+dedicated to providing students opportunities to gain hands-on
+experience with projects in preparation for the real-world.
+Through our organization, student will be able to explore the
+field of engineering and hone new skills that are fundamental to
+developing state-of-the-art technology.  Our organization is
 dedicated to making students be the succesful engineer they envision
-themselves to be so that they can advance technology for humanity in 
+themselves to be so that they can advance technology for humanity in
 their own passion.`;
 
 const images = [
@@ -40,7 +40,7 @@ const images = [
     width: '55%',
     place: "3"
   },
-  
+
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -135,7 +135,7 @@ export default function Home() {
       <Box paddingTop="20%" paddingBottom="10%">
         <Typography variant="h5" style={{textAlign: "center"}}>Spring 2020 Website Competition Winners</Typography>
       </Box>
-      
+
 
       <Grid
         container

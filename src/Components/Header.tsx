@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/ieee_uci_logo_trans_white.png';
+import logo from '../images/ieee_uci_logo_trans_white.svg';
 import { Grid, Button, Box } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -93,7 +93,7 @@ function DropDown(props: {name: string, options: {name: string, url: string}[]})
                   <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     {props.options.map((option) => (
                       <MenuItem style={{color: 'black'}} onClick={(event: React.MouseEvent<EventTarget>) => handleClose(event, option.url)}>{option.name}</MenuItem>
-                    ))}       
+                    ))}
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
