@@ -8,6 +8,8 @@ import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid} from '@material-ui/core';
+import Footer from '../Components/Footer';
+import '../Styles/index.css';
 
 const introText = `IEEE at UC Irvine is a student organization 
 dedicated to providing students opportunities to gain hands-on 
@@ -75,17 +77,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   focusVisible: {},
-  // imageButton: {
-  //   position: 'absolute',
-  //   left: 0,
-  //   right: 0,
-  //   top: 0,
-  //   bottom: 0,
-  //   display: 'flex',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   color: theme.palette.common.white,
-  // },
+  cardTextControl: {
+    fontFamily: 'Roboto, sans-serif',
+    fontSize: 200,
+  },
   imageSrc: {
     position: 'absolute',
     left: 0,
@@ -150,7 +145,7 @@ export default function Home() {
       >
       <div className={classes.root}>
       {images.map((image) => (
-        <Box marginLeft="31%" marginBottom="2%">
+        <Box marginLeft="31%" marginBottom="4%">
         <ButtonBase
           focusRipple
           key={image.title}
@@ -178,7 +173,7 @@ export default function Home() {
               <span className={classes.imageMarked} />
             </Typography>
           </span>
-          <Box className={classes.cardRibbon}><Typography variant="h2">{image.place}</Typography></Box>
+          <Box className={classes.cardRibbon}><Typography className={`card-text ${classes.cardTextControl}`}>{image.place}</Typography></Box>
 
         </ButtonBase>
 
@@ -186,6 +181,7 @@ export default function Home() {
       ))}
         </div>
       </Grid>
+      <Footer/>
     </div>
   );
 }
