@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
 import mainImage from '../images/robot_hand.svg';
 import textBrace from '../images/textBrace.png';
+import banner from '../images/home_about_banner.svg'
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
@@ -127,16 +128,15 @@ export default function Home() {
       <img src={mainImage} className="mainBodyImage" alt="logo" />
       <Box marginTop={-55} paddingBottom={55}>
         <Typography variant="h4" style={{textAlign: "center"}}>ADVANCING TECHNOLOGY FOR HUMANITY</Typography>
-      </Box>s
-      <Box marginLeft="85%" width="15%">
-        <img src={textBrace} width="100%" alt="Brace"/>
       </Box>
-        <Box marginLeft="20%" marginRight="20%" marginBottom="-2.5%">
-          <Typography style={{textAlign: "center"}}>{introText}</Typography>
+      <Box style={{position:'relative'}}>
+        <img src={banner} width="100%" alt="Brace"/>
+        <Box marginLeft="25%" marginRight="25%" marginBottom="-2.5%">
+          <Typography className='mainAboutText' style={{textAlign: "center", position: 'absolute', width: '60%', top:'30%', left: '15%'}}>{introText}</Typography>
         </Box>
-      <img src={textBrace} width="80%" alt="Brace"/>
+      </Box>
       <Box paddingTop="20%" paddingBottom="10%">
-        <Typography variant="h5" style={{textAlign: "center"}}>Spring 2020 Website Competition Winners</Typography>
+        <Typography variant="h5" style={{textAlign: "center"}}>SPRING 2020 WEBSITE COMPETITION WINNERS</Typography>
       </Box>
 
 
