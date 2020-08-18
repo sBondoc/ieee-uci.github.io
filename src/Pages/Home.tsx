@@ -125,14 +125,14 @@ export default function Home() {
   return(
     <div>
       <Header/>
-      <img src={mainImage} className="mainBodyImage" alt="logo" />
+      <img src={mainImage} className="mainBodyImage" alt="logo" style={{width: '85%', height:'auto', position: 'relative', marginTop: '8%', left: '2%'}}/>
       <Box marginTop={-55} paddingBottom={55}>
-        <Typography variant="h4" style={{textAlign: "center"}}>ADVANCING TECHNOLOGY FOR HUMANITY</Typography>
+        <Typography variant="h4" style={{textAlign: "center", position: 'absolute', fontSize: '3vw', marginTop: '10%', left: '20%'}}>ADVANCING TECHNOLOGY FOR HUMANITY</Typography>
       </Box>
       <Box style={{position:'relative'}}>
         <img src={banner} width="100%" alt="Brace"/>
-        <Box marginLeft="25%" marginRight="25%" marginBottom="-2.5%">
-          <Typography className='mainAboutText' style={{textAlign: "center", position: 'absolute', width: '60%', top:'30%', left: '15%'}}>{introText}</Typography>
+        <Box style={{position:'absolute', width: '70%', top: '20%', bottom: '5%', left: '15%'}}>
+          <Typography className='mainAboutText' style={{textAlign: "center", position: 'absolute', fontSize: '1.3vw', padding: '5%'}}>{introText}</Typography>
         </Box>
       </Box>
       <Box paddingTop="20%" paddingBottom="10%">
