@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/ieee_uci_logo_trans_white.png';
+import logo from '../images/ieee_uci_logo_trans_white.svg';
 import { Grid, Button, Box } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -93,7 +93,7 @@ function DropDown(props: {name: string, options: {name: string, url: string}[]})
                   <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     {props.options.map((option) => (
                       <MenuItem style={{color: 'black'}} onClick={(event: React.MouseEvent<EventTarget>) => handleClose(event, option.url)}>{option.name}</MenuItem>
-                    ))}       
+                    ))}
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
@@ -114,14 +114,14 @@ export default function Header() {
   };
 
   return(
-    <header className='App-header' style={{height: 60, background: 'linear-gradient(to right, #33BFFF, #2A6AC6)'}}>
+    <header className='App-header' style={{height: 60, background: 'linear-gradient(to right, #33BFFF, #2A6AC6)', position: 'fixed', width: '100%', zIndex: 999}}>
       <Grid container direction="row" justify="space-between" alignItems="center">
         <img src={logo} style={{height: 200, marginTop: -55}} className="App-logo" alt="logo" />
         <Box marginRight={4} marginTop={-10.5}>
           <Grid container direction="row" justify="space-between" alignItems="center">
             <Button onClick={() => handleClick('/')}>Home</Button>
             <DropDown name="About" options={AboutOptions}/>
-            <DropDown name="Project" options={ProjectOptions}/>
+            <DropDown name="Projects" options={ProjectOptions}/>
             <Button onClick={() => handleClick('events')}>Events</Button>
           </Grid>
         </Box>

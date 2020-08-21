@@ -1,8 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
-import mainImage from '../images/robot_hand.jpg';
+import mainImage from '../images/robot_hand.svg';
 import textBrace from '../images/textBrace.png';
+import banner from '../images/home_about_banner.svg'
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
@@ -11,14 +12,14 @@ import {Typography, Box, Grid} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css';
 
-const introText = `IEEE at UC Irvine is a student organization 
-dedicated to providing students opportunities to gain hands-on 
-experience with projects in preparation for the real-world. 
-Through our organization, student will be able to explore the 
-field of engineering and hone new skills that are fundamental to 
-developing state-of-the-art technology.  Our organization is 
+const introText = `IEEE at UC Irvine is a student organization
+dedicated to providing students opportunities to gain hands-on
+experience with projects in preparation for the real-world.
+Through our organization, student will be able to explore the
+field of engineering and hone new skills that are fundamental to
+developing state-of-the-art technology.  Our organization is
 dedicated to making students be the succesful engineer they envision
-themselves to be so that they can advance technology for humanity in 
+themselves to be so that they can advance technology for humanity in
 their own passion.`;
 
 const images = [
@@ -26,21 +27,24 @@ const images = [
     url: kellyWeb,
     title: 'Kelly Lue',
     width: '55%',
-    place: "1"
+    place: "1",
+    webURL: "https://kellylue.github.io/"
   },
   {
     url: jackWeb,
     title: 'Jack Whittaker',
     width: '55%',
-    place: "2"
+    place: "2",
+    webURL: "https://jackw01.github.io/"
   },
   {
     url: salWeb,
     title: 'Salvador Villalon',
     width: '55%',
-    place: "3"
+    place: "3",
+    webURL: "https://salvillalon45.github.io/"
   },
-  
+
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -121,21 +125,20 @@ export default function Home() {
   return(
     <div>
       <Header/>
-      <img src={mainImage} className="mainBodyImage" alt="logo" />
+      <img src={mainImage} className="mainBodyImage" alt="logo" style={{width: '85%', height:'auto', position: 'relative', marginTop: '8%', left: '2%'}}/>
       <Box marginTop={-55} paddingBottom={55}>
-        <Typography variant="h4" style={{textAlign: "center"}}>ADVANCING TECHNOLOGY FOR HUMANITY</Typography>
-      </Box>s
-      <Box marginLeft="85%" width="15%">
-        <img src={textBrace} width="100%" alt="Brace"/>
+        <Typography variant="h4" style={{textAlign: "center", position: 'absolute', fontSize: '3vw', marginTop: '10%', left: '20%'}}>ADVANCING TECHNOLOGY FOR HUMANITY</Typography>
       </Box>
-        <Box marginLeft="20%" marginRight="20%" marginBottom="-2.5%">
-          <Typography style={{textAlign: "center"}}>{introText}</Typography>
+      <Box style={{position:'relative'}}>
+        <img src={banner} width="100%" alt="Brace"/>
+        <Box style={{position:'absolute', width: '70%', top: '20%', bottom: '5%', left: '15%'}}>
+          <Typography className='mainAboutText' style={{textAlign: "center", position: 'absolute', fontSize: '1.3vw', padding: '5%'}}>{introText}</Typography>
         </Box>
-      <img src={textBrace} width="80%" alt="Brace"/>
-      <Box paddingTop="20%" paddingBottom="10%">
-        <Typography variant="h5" style={{textAlign: "center"}}>Spring 2020 Website Competition Winners</Typography>
       </Box>
-      
+      <Box paddingTop="20%" paddingBottom="10%">
+        <Typography variant="h5" style={{textAlign: "center"}}>SPRING 2020 WEBSITE COMPETITION WINNERS</Typography>
+      </Box>
+
 
       <Grid
         container
@@ -154,6 +157,7 @@ export default function Home() {
           style={{
             width: image.width,
           }}
+          href={image.webURL}
         >
           <span
             className={classes.imageSrc}
