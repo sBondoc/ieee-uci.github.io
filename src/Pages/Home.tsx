@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
 import mainImage from '../images/robot_hand.svg';
-import textBrace from '../images/textBrace.png';
 import banner from '../images/home_about_banner.svg'
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';

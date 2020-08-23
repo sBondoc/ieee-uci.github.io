@@ -16,7 +16,7 @@ export default function Micromouse() {
       <Header/>
       <Box paddingTop="3%"/>
       <img src={MMImage} className="mainBodyImage" width="100%" alt="logo" />
-      <img src={MMTitle} className="mainBodyImage" style={{margin: '0% 5% 5%', width: '60%'}} alt="title" />
+      <img src={MMTitle} className="mmTitle" style={{margin: '0% 5% 5%', width: '60%'}} alt="title" />
       <Box marginLeft="25%" marginRight="15%" marginBottom="2.5%">
         <Typography style={{textAlign: "left"}}>{introText}</Typography>
       </Box>
