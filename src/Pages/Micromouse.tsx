@@ -16,39 +16,41 @@ const joinText = "Micromouse is a project that gives engineers and computer scie
 export default function Micromouse() {
 
   return(
-    <div>
+    <div style={{overflow:"hidden"}}>
       <Header/>
       <Box paddingTop="3%"/>
       <img src={MMImage} className="mainBodyImage" width="100%" alt="logo" />
       <img src={MMTitle} className="mmTitle" style={{margin: '0% 5% 5%', width: '60%'}} alt="title" />
-      <Box marginLeft="5%" marginRight="5%" marginBottom="2.5%">
-        <img className="mmImg1" src={MMWhat} alt="Micromouse"/>
-        <Box marginLeft="20%">
-          <Typography variant="h3" style={{marginBottom: "5%"}}>what is micromouse?</Typography>
-          <Typography style={{textAlign: "left"}}>{introText}</Typography>
-        </Box>
-      </Box>
 
-      <Grid
-        container
-        direction="row"
-        justify="space-between"
-        alignItems="center"
-      >
-        <Box marginLeft="5%" width="55%" marginTop="7%">
-          <Typography variant="h3" style={{marginBottom: "5%"}}>who are we?</Typography>
-          <Typography style={{textAlign: "left"}}>{whoText}</Typography>
-        </Box>
-        <img className="mmImg2" src={MMWho} alt="Micromouse PCB"/>
-
-        <img className="mmImg3" src={MMJoin} alt="Micromouse Maze"/>
-        <Box marginRight="5%" width="55%" marginTop="7%">
-          <Typography variant="h3" style={{marginBottom: "5%"}}>why should you join?</Typography>
-          <Typography style={{textAlign: "left"}}>{joinText}</Typography>
-        </Box>
+      <Grid container direction="column" alignItems="center" spacing={8}>
+        <Grid container item direction="row" justify="space-evenly" alignItems="center" >
+          <Grid item xs={3}>
+            <img className="mmImg1" src={MMWhat} alt="Micromouse"/>
+          </Grid>
+          <Grid item sm={7}>
+            <Typography variant="h3" style={{marginBottom: "5%"}}>what is micromouse?</Typography>
+            <Typography style={{textAlign: "left"}}>{introText}</Typography>
+          </Grid>
+        </Grid>
+        <Grid container item  direction="row" justify="space-evenly" alignItems="center">
+          <Grid item sm={7}>
+            <Typography variant="h3" style={{marginBottom: "5%"}}>who are we?</Typography>
+            <Typography style={{textAlign: "left"}}>{whoText}</Typography>
+          </Grid>
+          <Grid item xs={3}>
+            <img className="mmImg2" src={MMWho} alt="Micromouse PCB"/>
+          </Grid>
+        </Grid>
+        <Grid container item direction="row" justify="space-evenly" alignItems="center" >
+          <Grid item xs={3}>
+            <img className="mmImg3" src={MMJoin} alt="Micromouse Maze"/>
+          </Grid>
+          <Grid item sm={7}>
+            <Typography variant="h3" style={{marginBottom: "5%"}}>why should you join?</Typography>
+            <Typography style={{textAlign: "left"}}>{joinText}</Typography>
+          </Grid>
+        </Grid>
       </Grid>
-
-
       <Footer/>
     </div>
   );
