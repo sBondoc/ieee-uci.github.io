@@ -2,13 +2,17 @@ import React from 'react';
 import Header from '../Components/Header';
 import MMImage from '../images/micromouse_maze.svg';
 import MMTitle from '../images/projects_micromouse.svg'
-import PCBImage from '../images/mousepcb.jpg';
+import MMWhat from '../images/mm1.png';
+import MMWho from '../images/mm2.jpg';
+import MMJoin from '../images/mm3.png';
 import {Typography, Box, Grid} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css'
 
 const introText = "Micromouse is a robotics competition hosted by IEEE in which students design, develop, and program a robotic mouse to autonomously navigate a maze. While it sounds like an easy task, it will require your minds to perform at an extraordinary level as you start to apply the knowledge you acquire from coursework to the real test!";
 const whoText = "We are a club that is geared towards promoting IEEE's Micromouse Competition and helping it grow at UCI. We will be having weekly meetings and build sessions to help students in groups of 1-5, build a micromouse. Our goal is to reach out to engineering and computer science students to teach them about the competition and design process, with the eventual hope of building the foundation for a successful Micromouse program here at UCI.";
+const joinText = "Micromouse is a project that gives engineers and computer scientists the hands-on experience they truly need! This project will teach you a great deal about electronics, circuit design, PCB design, and Arduino programming, which can set you apart from others professionally."
+
 export default function Micromouse() {
 
   return(
@@ -17,8 +21,12 @@ export default function Micromouse() {
       <Box paddingTop="3%"/>
       <img src={MMImage} className="mainBodyImage" width="100%" alt="logo" />
       <img src={MMTitle} className="mmTitle" style={{margin: '0% 5% 5%', width: '60%'}} alt="title" />
-      <Box marginLeft="25%" marginRight="15%" marginBottom="2.5%">
-        <Typography style={{textAlign: "left"}}>{introText}</Typography>
+      <Box marginLeft="5%" marginRight="5%" marginBottom="2.5%">
+        <img className="mmImg1" src={MMWhat} alt="Micromouse"/>
+        <Box marginLeft="20%">
+          <Typography variant="h3" style={{marginBottom: "5%"}}>what is micromouse?</Typography>
+          <Typography style={{textAlign: "left"}}>{introText}</Typography>
+        </Box>
       </Box>
 
       <Grid
@@ -28,9 +36,16 @@ export default function Micromouse() {
         alignItems="center"
       >
         <Box marginLeft="5%" width="55%" marginTop="7%">
+          <Typography variant="h3" style={{marginBottom: "5%"}}>who are we?</Typography>
           <Typography style={{textAlign: "left"}}>{whoText}</Typography>
         </Box>
-        <img className="mmImg" src={PCBImage} alt="Micromouse PCB"/>
+        <img className="mmImg2" src={MMWho} alt="Micromouse PCB"/>
+
+        <img className="mmImg3" src={MMJoin} alt="Micromouse Maze"/>
+        <Box marginRight="5%" width="55%" marginTop="7%">
+          <Typography variant="h3" style={{marginBottom: "5%"}}>why should you join?</Typography>
+          <Typography style={{textAlign: "left"}}>{joinText}</Typography>
+        </Box>
       </Grid>
 
 
