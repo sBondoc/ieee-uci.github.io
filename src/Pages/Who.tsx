@@ -4,6 +4,7 @@ import {Typography, Box} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css'
 import WhoTitle from '../images/about_ieee.svg'
+import WhoImage from '../images/soldier2.png'
 
 const introText = `IEEE at UCI is one of UCI's premier Electrical
 Engineering clubs. We strive to support the hard working engineering
@@ -25,11 +26,12 @@ export default function Who() {
     <div>
       <Header/>
       <img src={WhoTitle} style={{margin: '10% 5% 5%', width: '34%'}} className="whoTitle" alt = "Title"/>
-      <Box paddingTop="2%" paddingLeft="30%">
+      <Box paddingTop="2%" paddingLeft="55%">
         <Typography variant="h2">WHO ARE WE?</Typography>
       </Box>
-      <Box paddingTop="4%" paddingLeft="30%" paddingRight="10%">
-        <Typography>{introText}</Typography>
+      <img src={WhoImage} style={{width: '50vw', marginLeft:'5%', position: 'relative'}} alt="IEEE Soldier"/>
+      <Box paddingTop="4%" paddingLeft="55%">
+        <Typography style={{position:'absolute', top:'35vw'}}>{introText}</Typography>
       </Box>
 
       <Footer/>
