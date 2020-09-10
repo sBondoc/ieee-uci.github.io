@@ -17,7 +17,7 @@ experience with projects in preparation for the real-world.
 Through our organization, student will be able to explore the
 field of engineering and hone new skills that are fundamental to
 developing state-of-the-art technology.  Our organization is
-dedicated to making students be the succesful engineer they envision
+dedicated to helping students become the succesful engineer they envision
 themselves to be so that they can advance technology for humanity in
 their own passion.`;
 

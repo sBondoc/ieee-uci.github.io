@@ -7,6 +7,7 @@ import twitterIcon from '../images/twittericon.png';
 import snapchatIcon from '../images/snapchaticon.png';
 import linkedInIcon from '../images/linkedinicon.png';
 import discordIcon from '../images/discordicon.png';
+import githubIcon from '../images/githubicon.png';
 import textBrace from '../images/textBrace.png';
 import textEntry from '../images/textentry.png'
 import IconButton from '@material-ui/core/IconButton';
@@ -71,6 +72,7 @@ export default function Footer() {
             <SocialIcon link="https://www.instagram.com/ieee_uci/" src={igIcon}/>
             <SocialIcon link="https://www.linkedin.com/in/ieeeuci" src={linkedInIcon}/>
             <SocialIcon link="https://bit.ly/IEEE-UCI_Discord" src={discordIcon}/>
+            <SocialIcon link="https://github.com/ieee-uci" src={githubIcon}/>
 
           </Grid>
 

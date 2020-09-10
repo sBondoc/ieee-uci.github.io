@@ -6,6 +6,7 @@ import '../Styles/index.css'
 import WhoTitle from '../images/about_ieee.svg'
 import WhoImage from '../images/ieee_soldier.png'
 import discordIcon from '../images/discordicon.png';
+import emailIcon from '../images/emailicon.png';
 import IconButton from '@material-ui/core/IconButton';
 import {Grid} from '@material-ui/core';
 import {SocialIcon} from '../Components/Footer';
@@ -44,8 +45,16 @@ export default function Who() {
 
       <Box paddingTop="5%" paddingBottom="25vw" style={{position:'relative', marginLeft: "59%", marginRight: "5%"}}>
         <Typography variant="h2">get involved</Typography>
-        <Typography style={{paddingTop:"5%"}}>{getInvolvedText}</Typography>
-        <SocialIcon link="https://bit.ly/IEEE-UCI_Discord" src={discordIcon}/>
+        <Typography style={{paddingTop:"5%", paddingBottom:"10%"}}>{getInvolvedText}</Typography>
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center">
+            <SocialIcon link="https://bit.ly/IEEE-UCI_Discord" src={discordIcon}/>
+            <SocialIcon link="" src={emailIcon}/>
+
+        </Grid>
       </Box>
 
       <Box paddingTop="5%" paddingBottom="25vw" style={{position:'relative', marginLeft: "59%", marginRight: "5%"}}>
