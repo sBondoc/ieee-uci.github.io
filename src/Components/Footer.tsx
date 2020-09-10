@@ -6,6 +6,7 @@ import igIcon from '../images/instagramicon.png';
 import twitterIcon from '../images/twittericon.png';
 import snapchatIcon from '../images/snapchaticon.png';
 import linkedInIcon from '../images/linkedinicon.png';
+import discordIcon from '../images/discordicon.png';
 import textBrace from '../images/textBrace.png';
 import textEntry from '../images/textentry.png'
 import IconButton from '@material-ui/core/IconButton';
@@ -31,12 +32,14 @@ function SocialIcon(props: {src: string, link: string}){
 
   return(
     <Box className={classes.socialIconBox}>
-      <IconButton className={classes.socialMediaIcon} href={props.link}>
+      <IconButton className={classes.socialMediaIcon} href={props.link} target="_blank">
         <img width="100%" src={props.src} alt="socialmediaicon"/>
       </IconButton>
     </Box>
   );
 }
+
+export {SocialIcon}
 
 export default function Footer() {
   const classes = useStyles();
@@ -65,12 +68,12 @@ export default function Footer() {
               </IconButton>
             </Box>
             <SocialIcon link="https://www.facebook.com/IEEE.UCI/" src={fbIcon}/>
-            <SocialIcon link="" src={twitterIcon}/>
             <SocialIcon link="https://www.instagram.com/ieee_uci/" src={igIcon}/>
-            <SocialIcon link="" src={snapchatIcon}/>
-            <SocialIcon link="" src={linkedInIcon}/>
+            <SocialIcon link="https://www.linkedin.com/in/ieeeuci" src={linkedInIcon}/>
+            <SocialIcon link="https://bit.ly/IEEE-UCI_Discord" src={discordIcon}/>
+
           </Grid>
-          
+
 
           </Box>
             <Grid

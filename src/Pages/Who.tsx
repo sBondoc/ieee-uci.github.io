@@ -4,7 +4,13 @@ import {Typography, Box} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css'
 import WhoTitle from '../images/about_ieee.svg'
-import WhoImage from '../images/soldier2.png'
+import WhoImage from '../images/ieee_soldier.png'
+import discordIcon from '../images/discordicon.png';
+import IconButton from '@material-ui/core/IconButton';
+import {Grid} from '@material-ui/core';
+import {SocialIcon} from '../Components/Footer';
+
+
 
 const introText = `IEEE at UCI is one of UCI's premier Electrical
 Engineering clubs. We strive to support the hard working engineering
@@ -30,18 +36,19 @@ export default function Who() {
 
       <img src={WhoImage} style={{width: '48vw', marginTop:"0%", top: "20%", left: "5%", position:'sticky'}} alt="IEEE Soldier"/>
 
-      <Box paddingTop="4%" paddingBottom="40vw" style={{marginLeft: "55%"}}>
-        <Typography style={{top:"25vw", position: "absolute", marginRight: "5%"}}variant="h2">who are we?</Typography>
+      <Box paddingTop="4%" paddingBottom="25vw" style={{marginLeft: "59%"}}>
+        <Typography style={{top:"25vw", position: "absolute", marginRight: "5%"}} variant="h2">who are we?</Typography>
         <Typography style={{top:"30vw", paddingTop:"5%", position: "absolute", marginRight: "5%"}}>{introText}</Typography>
       </Box>
 
 
-      <Box paddingTop="5%" paddingBottom="40vw" style={{position:'relative', marginLeft: "55%", marginRight: "5%"}}>
+      <Box paddingTop="5%" paddingBottom="25vw" style={{position:'relative', marginLeft: "59%", marginRight: "5%"}}>
         <Typography variant="h2">get involved</Typography>
         <Typography style={{paddingTop:"5%"}}>{getInvolvedText}</Typography>
+        <SocialIcon link="https://bit.ly/IEEE-UCI_Discord" src={discordIcon}/>
       </Box>
 
-      <Box paddingTop="5%" paddingBottom="40vw" style={{position:'relative', marginLeft: "55%", marginRight: "5%"}}>
+      <Box paddingTop="5%" paddingBottom="25vw" style={{position:'relative', marginLeft: "59%", marginRight: "5%"}}>
         <Typography variant="h2">membership</Typography>
         <Typography style={{paddingTop:"5%"}}>{membershipText}</Typography>
         <ul>
