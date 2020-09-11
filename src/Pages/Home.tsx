@@ -9,6 +9,8 @@ import salWeb from '../images/ws_salvador.png';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid} from '@material-ui/core';
 import Footer from '../Components/Footer';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import IconButton from '@material-ui/core/IconButton';
 import '../Styles/index.css';
 
 const introText = `IEEE at UC Irvine is a student organization
@@ -124,15 +126,19 @@ export default function Home() {
   return(
     <div>
       <Header/>
-      <img src={mainImage} className="mainBodyImage" alt="logo" style={{width: '85%', height:'auto', position: 'relative', marginTop: '8%', left: '2%'}}/>
-      <Box marginTop={-55} paddingBottom={55}>
-        <Typography variant="h4" style={{textAlign: "center", position: 'absolute', fontSize: '3vw', marginTop: '10%', left: '20%'}}>ADVANCING TECHNOLOGY FOR HUMANITY</Typography>
+      <img src={mainImage} className="mainBodyImage" alt="logo" style={{opacity: "40%", width: '85%', height:'auto', position: 'relative', top: '8vw', left: '2vw'}}/>
+      <Box marginTop={-55} paddingBottom={'45vw'}>
+        <Typography variant="h4" style={{textAlign: "center", position: 'absolute', fontSize: '3vw', top: '30vw', left: '20%'}}><b>ADVANCING TECHNOLOGY FOR HUMANITY</b></Typography>
       </Box>
       <Box style={{position:'relative'}}>
         <img src={banner} width="100%" alt="Brace"/>
         <Box style={{position:'absolute', width: '70%', top: '20%', bottom: '5%', left: '15%'}}>
           <Typography className='mainAboutText' style={{textAlign: "center", position: 'absolute', fontSize: '1.3vw', padding: '5%'}}>{introText}</Typography>
         </Box>
+        <IconButton style={{opacity:"80%", color:"white", position: "absolute", right: "2%", bottom: "35%"}} aria-label="About Us" href="https://ieee-uci.github.io/about/who" target="_blank">
+          <ArrowForwardIosIcon/>
+        </IconButton>
+
       </Box>
       <Box paddingTop="20%" paddingBottom="10%">
         <Typography variant="h5" style={{textAlign: "center"}}>SPRING 2020 WEBSITE COMPETITION WINNERS</Typography>
