@@ -19,8 +19,8 @@ export default function Micromouse() {
     <div style={{overflow:"hidden"}}>
       <Header/>
       <Box paddingTop="3%"/>
-      <img src={MMImage} className="mainBodyImage" width="100%" alt="logo" />
-      <img src={MMTitle} className="mmTitle" style={{margin: '0% 5% 5%', width: '60%'}} alt="title" />
+      <img src={MMImage} className="mainBodyImage" width="100%" alt="logo" style={{opacity:"60%"}}/>
+      <img src={MMTitle} className="mmTitle" style={{margin: '0% 5% 5%', width: '50%'}} alt="title" />
 
       <Grid container direction="column" alignItems="center" spacing={8}>
         <Grid container item direction="row" justify="space-evenly" alignItems="center" >
