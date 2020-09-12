@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9281f58d28495105abcdcd4dab10d6f4",
+    "revision": "c32c36642a0cbc58463c34b1c08cf3d9",
     "url": "/index.html"
   },
   {
-    "revision": "70328678ea7395849d38",
-    "url": "/static/css/main.10942a19.chunk.css"
+    "revision": "f3d4c97067d2c8db0e33",
+    "url": "/static/css/main.94fb15eb.chunk.css"
   },
   {
-    "revision": "7ea5addfc0198ed03b5a",
-    "url": "/static/js/2.e2e55702.chunk.js"
+    "revision": "95f6722e39f06114efba",
+    "url": "/static/js/2.7f827d4f.chunk.js"
   },
   {
     "revision": "89b0379e7bcda1a468d8b0343aeb4e53",
-    "url": "/static/js/2.e2e55702.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.7f827d4f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70328678ea7395849d38",
-    "url": "/static/js/main.f0260be7.chunk.js"
+    "revision": "f3d4c97067d2c8db0e33",
+    "url": "/static/js/main.0b4d279e.chunk.js"
   },
   {
     "revision": "c9ca9e5254b9d2c5f1c3",
@@ -42,6 +42,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d557ead3615cd134f73bc43c23a7f325",
     "url": "/static/media/home_about_banner.d557ead3.svg"
+  },
+  {
+    "revision": "8009602a8c9a9759153cbb107f4e1905",
+    "url": "/static/media/ieee_board_20.8009602a.png"
+  },
+  {
+    "revision": "be23ebf48a36eef9f4c447b8e86905af",
+    "url": "/static/media/ieee_soldier.be23ebf4.png"
   },
   {
     "revision": "b4ef3faa0ac4a735857a7f360fecc836",
@@ -80,24 +88,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/robot_hand.6440419e.svg"
   },
   {
-    "revision": "c5b802ce205e44c51aeee61481f70643",
-    "url": "/static/media/snapchaticon.c5b802ce.png"
-  },
-  {
-    "revision": "be23ebf48a36eef9f4c447b8e86905af",
-    "url": "/static/media/soldier2.be23ebf4.png"
-  },
-  {
     "revision": "d9ec03d063c4922e12346bd7b124db25",
     "url": "/static/media/textBrace.d9ec03d0.png"
   },
   {
     "revision": "e98f2663d32d0de97dfadb1f90c86132",
     "url": "/static/media/textentry.e98f2663.png"
-  },
-  {
-    "revision": "9d863342a8e1d3a83aebb184e61f8b8e",
-    "url": "/static/media/twittericon.9d863342.png"
   },
   {
     "revision": "fffd334beb205e790fc31aac10d76d99",
