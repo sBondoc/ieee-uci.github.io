@@ -7,7 +7,7 @@ import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import {Typography, Box, Grid} from '@material-ui/core';
+import {Typography, Box, Grid, Button} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import IconButton from '@material-ui/core/IconButton';
@@ -28,22 +28,25 @@ const images = [
     url: kellyWeb,
     title: 'Kelly Lue',
     width: '55%',
-    place: "1",
-    webURL: "https://kellylue.github.io/"
+    place: "1st",
+    webURL: "https://kellylue.github.io/",
+    index: 0,
   },
   {
     url: jackWeb,
     title: 'Jack Whittaker',
     width: '55%',
-    place: "2",
-    webURL: "https://jackw01.github.io/"
+    place: "2nd",
+    webURL: "https://jackw01.github.io/",
+    index: 1,
   },
   {
     url: salWeb,
     title: 'Salvador Villalon',
     width: '55%',
-    place: "3",
-    webURL: "https://salvillalon45.github.io/"
+    place: "3rd",
+    webURL: "https://salvillalon45.github.io/",
+    index: 2,
   },
 
 ];
@@ -53,6 +56,12 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     minWidth: 300,
     width: '100%',
+  },
+  activePlace:{
+    color: "white"
+  },
+  inactivePlace:{
+    color: "grey"
   },
   cardRibbon: {
     position: 'absolute',
@@ -123,6 +132,16 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
   const classes = useStyles();
 
+  const [websiteActive, setWebsiteActive] = React.useState([true, false, false]);
+  const [activeWeb, setActiveWeb] = React.useState(images[0]);
+
+  const setPlace = (index: number) => {
+    let temp = [false, false, false];
+    temp[index] = true;
+    setWebsiteActive(temp);
+    setActiveWeb(images[index]);
+  };
+
   return(
     <div>
       <Header/>
@@ -140,34 +159,32 @@ export default function Home() {
         </IconButton>
 
       </Box>
-      <Box paddingTop="20%" paddingBottom="10%">
-        <Typography variant="h5" style={{textAlign: "center"}}>SPRING 2020 WEBSITE COMPETITION WINNERS</Typography>
+      <Box paddingLeft="5%" paddingTop="20%" paddingBottom="10%">
+        <Typography variant="h5">/ SPRING 2020</Typography>
+        <Box paddingTop="2%">
+          <Typography variant="h5">Website Design Competition Winners</Typography>
+        </Box>
       </Box>
 
 
-      <Grid
-        container
-        direction="column"
-        justify="center"
-        alignItems="center"
-      >
-      <div className={classes.root}>
-      {images.map((image) => (
-        <Box marginLeft="31%" marginBottom="4%">
+
+      <Box style={{position:'relative'}}>
+        <img src={banner} width="100%" alt="Brace"/>
+        <Box marginLeft="20%" marginBottom="10%" marginTop="-30%">
         <ButtonBase
           focusRipple
-          key={image.title}
+          key={activeWeb.title}
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: image.width,
+            width: activeWeb.width,
           }}
-          href={image.webURL}
+          href={activeWeb.webURL}
         >
           <span
             className={classes.imageSrc}
             style={{
-              backgroundImage: `url(${image.url})`,
+              backgroundImage: `url(${activeWeb.url})`,
             }}
           />
           <span className={classes.imageBackdrop} />
@@ -178,17 +195,43 @@ export default function Home() {
               color="inherit"
               className={classes.imageTitle}
             >
-              {image.title}
+              {activeWeb.title}
               <span className={classes.imageMarked} />
             </Typography>
           </span>
-          <Box className={classes.cardRibbon}><Typography className={`card-text ${classes.cardTextControl}`}>{image.place}</Typography></Box>
 
         </ButtonBase>
 
         </Box>
-      ))}
-        </div>
+      </Box>
+
+      <Grid
+        container
+        direction="column"
+        justify="space-evenly"
+        alignItems="center"
+      >
+      <div className={classes.root}>
+        {images.map((image) => (
+          <Grid
+            container
+            direction="row"
+            justify="flex-start"
+            alignItems="center"
+          >
+            <Box paddingLeft="15%">
+              <Button
+                onClick={() => {setPlace(image.index)}}
+                className={(websiteActive[image.index]) ? 
+                  classes.activePlace : classes.inactivePlace
+                }
+              >
+                {image.place} {image.title}
+              </Button>
+            </Box>
+          </Grid>
+        ))}
+      </div>
       </Grid>
       <Footer/>
     </div>
