@@ -9,7 +9,7 @@ import salWeb from '../images/ws_salvador.png';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid} from '@material-ui/core';
 import Footer from '../Components/Footer';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import IconButton from '@material-ui/core/IconButton';
 import '../Styles/index.css';
 
@@ -126,7 +126,7 @@ export default function Home() {
   return(
     <div>
       <Header/>
-      <img src={mainImage} className="mainBodyImage" alt="logo" style={{opacity: "40%", width: '85%', height:'auto', position: 'relative', top: '8vw', left: '2vw'}}/>
+      <img src={mainImage} className="mainBodyImage" alt="logo" style={{opacity: "60%", width: '85%', height:'auto', position: 'relative', top: '8vw', left: '2vw'}}/>
       <Box marginTop={-55} paddingBottom={'45vw'}>
         <Typography variant="h4" style={{textAlign: "center", position: 'absolute', fontSize: '3vw', top: '30vw', left: '20%'}}><b>ADVANCING TECHNOLOGY FOR HUMANITY</b></Typography>
       </Box>
@@ -135,8 +135,8 @@ export default function Home() {
         <Box style={{position:'absolute', width: '70%', top: '20%', bottom: '5%', left: '15%'}}>
           <Typography className='mainAboutText' style={{textAlign: "center", position: 'absolute', fontSize: '1.3vw', padding: '5%'}}>{introText}</Typography>
         </Box>
-        <IconButton style={{opacity:"80%", color:"white", position: "absolute", right: "2%", bottom: "35%"}} aria-label="About Us" href="https://ieee-uci.github.io/about/who" target="_blank">
-          <ArrowForwardIosIcon/>
+        <IconButton style={{opacity:"72%", color:"white", position: "absolute", right: "0%", bottom: "32%"}} aria-label="About Us" href="https://ieee-uci.github.io/about/who" target="_blank">
+          <ArrowRightIcon style={{fontSize:"3vw"}}/>
         </IconButton>
 
       </Box>

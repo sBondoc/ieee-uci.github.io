@@ -78,6 +78,7 @@ export default function Who() {
             </ul>
           <li>Students may request an IEEE project box to store hardware for class or personal projects.</li>
         </ul>
+        <Typography style={{paddingTop:"5%"}}> E-mail us at <b>ieee.ucirvine@gmail.com</b> if you'd like to become a member. </Typography>
       </Box>
 
       <Footer/>

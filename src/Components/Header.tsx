@@ -8,6 +8,8 @@ import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import MenuList from '@material-ui/core/MenuList';
+import HomeIcon from '@material-ui/icons/Home';
+import IconButton from '@material-ui/core/IconButton';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import { useHistory } from "react-router-dom";
 
@@ -119,7 +121,11 @@ export default function Header() {
         <img src={logo} style={{height: 200, marginTop: -55}} className="App-logo" alt="logo" />
         <Box marginRight={4} marginTop={-10.5}>
           <Grid container direction="row" justify="space-between" alignItems="center">
-            <Button onClick={() => handleClick('/')}>Home</Button>
+            <Button onClick={() => handleClick('/')}>
+              <IconButton style={{color:'white'}}>
+                <HomeIcon/>
+              </IconButton>
+            </Button>
             <DropDown name="About" options={AboutOptions}/>
             <DropDown name="Projects" options={ProjectOptions}/>
             <Button onClick={() => handleClick('events')}>Events</Button>
