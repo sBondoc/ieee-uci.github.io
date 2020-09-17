@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
-import mainImage from '../images/robot_hand.svg';
+import mainImage from '../images/skeleton_hand.svg';
 import banner from '../images/home_about_banner.svg'
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
@@ -145,9 +145,10 @@ export default function Home() {
   return(
     <div>
       <Header/>
-      <img src={mainImage} className="mainBodyImage" alt="logo" style={{opacity: "60%", width: '85%', height:'auto', position: 'relative', top: '8vw', left: '2vw'}}/>
-      <Box marginTop={-55} paddingBottom={'45vw'}>
-        <Typography variant="h4" style={{textAlign: "center", position: 'absolute', fontSize: '3vw', top: '30vw', left: '20%'}}><b>ADVANCING TECHNOLOGY FOR HUMANITY</b></Typography>
+      <Box style={{zIndex: -99, position: 'fixed', backgroundImage: 'linear-gradient(to bottom,  rgb(33,32,40), black)', width: '100%', height:'100%'}} />
+      <Box style={{position: 'relative', textAlign: 'center', paddingBottom: '15vw'}}>
+        <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "70%", width: '80%', top: '4vw', left: '0%'}}/>
+        <Typography variant="h4" className="advanceText" style={{whiteSpace: 'nowrap', position: 'absolute', fontSize: '3vw', letterSpacing: '7px', top: '40%', left:'50%', transform: 'translate(-50%, 0%)'}}><b>ADVANCING TECHNOLOGY FOR HUMANITY</b></Typography>
       </Box>
       <Box style={{position:'relative'}}>
         <img src={banner} width="100%" alt="Brace"/>
@@ -159,25 +160,29 @@ export default function Home() {
         </IconButton>
 
       </Box>
-      <Box paddingLeft="5%" paddingTop="20%" paddingBottom="10%">
-        <Typography variant="h5">/ SPRING 2020</Typography>
-        <Box paddingTop="2%">
+      <Box paddingLeft="15%" paddingTop="20%" paddingBottom="10%">
+        <Typography >/ SPRING 2020</Typography>
+        <Box paddingTop="2%" paddingBottom="2%">
           <Typography variant="h5">Website Design Competition Winners</Typography>
         </Box>
       </Box>
 
 
 
-      <Box style={{position:'relative'}}>
-        <img src={banner} width="100%" alt="Brace"/>
-        <Box marginLeft="20%" marginBottom="10%" marginTop="-30%">
+      <Box style={{position:'relative', marginTop: "25%"}}>
+        <Box className="webBanner" marginBottom="10%" marginTop="-30%">
         <ButtonBase
           focusRipple
           key={activeWeb.title}
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: activeWeb.width,
+            width: "40%",
+            position: "sticky",
+            marginTop: "4%",
+            left: "12%",
+            top: "15%",
+            boxShadow: "0px 5px  20px black"
           }}
           href={activeWeb.webURL}
         >
@@ -211,7 +216,7 @@ export default function Home() {
         justify="space-evenly"
         alignItems="center"
       >
-      <div className={classes.root}>
+      <div className={classes.root} style={{marginTop:"-50vw", paddingLeft:"15%"}}>
         {images.map((image) => (
           <Grid
             container
@@ -219,10 +224,10 @@ export default function Home() {
             justify="flex-start"
             alignItems="center"
           >
-            <Box paddingLeft="15%">
+            <Box >
               <Button
                 onClick={() => {setPlace(image.index)}}
-                className={(websiteActive[image.index]) ? 
+                className={(websiteActive[image.index]) ?
                   classes.activePlace : classes.inactivePlace
                 }
               >

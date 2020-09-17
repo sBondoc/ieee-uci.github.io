@@ -18,7 +18,7 @@ import '../Styles/index.css';
 
 const useStyles = makeStyles((theme) => ({
   socialMediaIcon: {
-    width: "50%",
+    width: "45%",
   },
   socialIconBox:{
     marginRight: theme.spacing(-8),
@@ -46,15 +46,15 @@ export default function Footer() {
   const classes = useStyles();
 
   return(
-    <Box paddingTop="10%">
-        <img src={textBrace} width="80%" style={{transform: 'scaleX(-1)'}} alt="Brace"/>
+    <Box paddingTop="10%" className='footerBox'>
+
         <Grid
             container
             direction="row"
             justify="space-between"
             alignItems="center"
           >
-        <Box paddingTop="4%" marginLeft="4%">
+        <Box paddingTop="4%" marginLeft="4%" className="footerIcons">
           <Grid
             container
             direction="row"
@@ -83,14 +83,14 @@ export default function Footer() {
               direction="column"
               justify="flex-start"
               alignItems="center"
-              style={{width: "30%", marginLeft: "-5%", marginRight: "5%"}}
+              style={{width: "30%", marginLeft: "-5%", marginRight: "5%", marginBottom: "5%"}}
             >
               <h2 className="newsHead">JOIN OUR MAILING LIST:</h2>
               <form action="https://formspree.io/xlepjdlk" method="POST">
                   <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
                   <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>
                   <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry} alt="lnameentry"/></label>
-                  <button className="submit" type="submit">Submit</button>
+                  <button className="submit" type="submit" style={{width: '95%', marginTop: '5%', textAlign: 'center'}}>Submit</button>
               </form>
             </Grid>
         </Grid>
