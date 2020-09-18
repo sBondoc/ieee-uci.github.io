@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
-import mainImage from '../images/skeleton_hand.svg';
+import mainImage from '../images/hex_home.svg';
 import banner from '../images/home_about_banner.svg'
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
@@ -145,10 +145,10 @@ export default function Home() {
   return(
     <div>
       <Header/>
-      <Box style={{zIndex: -99, position: 'fixed', backgroundImage: 'linear-gradient(to bottom,  rgb(33,32,40), black)', width: '100%', height:'100%'}} />
+      <Box style={{zIndex: -99, position: 'fixed', backgroundImage: 'linear-gradient(to bottom,  rgb(32,33,40), black)', width: '100%', height:'100%'}} />
       <Box style={{position: 'relative', textAlign: 'center', paddingBottom: '15vw'}}>
-        <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "70%", width: '80%', top: '4vw', left: '0%'}}/>
-        <Typography variant="h4" className="advanceText" style={{whiteSpace: 'nowrap', position: 'absolute', fontSize: '3vw', letterSpacing: '7px', top: '40%', left:'50%', transform: 'translate(-50%, 0%)'}}><b>ADVANCING TECHNOLOGY FOR HUMANITY</b></Typography>
+        <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "100%", width: '80%', top: '5vw', left: '-1%'}}/>
+        <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2vw', letterSpacing: '5px', top: '42%', left:'50%', transform: 'translate(-50%, 0%)'}}><b>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</b></Typography>
       </Box>
       <Box style={{position:'relative'}}>
         <img src={banner} width="100%" alt="Brace"/>
