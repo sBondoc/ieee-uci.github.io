@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.107e3800.chunk.css",
-    "main.js": "/static/js/main.dda52aea.chunk.js",
-    "main.js.map": "/static/js/main.dda52aea.chunk.js.map",
+    "main.js": "/static/js/main.d2d54b36.chunk.js",
+    "main.js.map": "/static/js/main.d2d54b36.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4dbf4889.js",
     "runtime-main.js.map": "/static/js/runtime-main.4dbf4889.js.map",
     "static/js/2.87d97604.chunk.js": "/static/js/2.87d97604.chunk.js",
     "static/js/2.87d97604.chunk.js.map": "/static/js/2.87d97604.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b875b6602211e64635f4bc5138e18f33.js": "/precache-manifest.b875b6602211e64635f4bc5138e18f33.js",
+    "precache-manifest.bb6efd27199eb0b093033a0c221a69e6.js": "/precache-manifest.bb6efd27199eb0b093033a0c221a69e6.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.107e3800.chunk.css.map": "/static/css/main.107e3800.chunk.css.map",
     "static/js/2.87d97604.chunk.js.LICENSE.txt": "/static/js/2.87d97604.chunk.js.LICENSE.txt",
@@ -16,6 +16,7 @@
     "static/media/about_ieee.svg": "/static/media/about_ieee.201d536e.svg",
     "static/media/emailicon.png": "/static/media/emailicon.99a7e17b.png",
     "static/media/facebookicon.png": "/static/media/facebookicon.1ffaab25.png",
+    "static/media/hex_home.svg": "/static/media/hex_home.4f8a1ce6.svg",
     "static/media/home_about_banner.svg": "/static/media/home_about_banner.d557ead3.svg",
     "static/media/ieee_board_20.png": "/static/media/ieee_board_20.8009602a.png",
     "static/media/ieee_soldier.png": "/static/media/ieee_soldier.be23ebf4.png",
@@ -27,7 +28,6 @@
     "static/media/mm2.jpg": "/static/media/mm2.b01890fa.jpg",
     "static/media/mm3.png": "/static/media/mm3.9c60cce7.png",
     "static/media/projects_micromouse.svg": "/static/media/projects_micromouse.bf4e323c.svg",
-    "static/media/skeleton_hand.svg": "/static/media/skeleton_hand.53efaeb6.svg",
     "static/media/textentry.png": "/static/media/textentry.e98f2663.png",
     "static/media/ws_jack.png": "/static/media/ws_jack.fffd334b.png",
     "static/media/ws_kelly.png": "/static/media/ws_kelly.85bc647b.png",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.4dbf4889.js",
     "static/js/2.87d97604.chunk.js",
     "static/css/main.107e3800.chunk.css",
-    "static/js/main.dda52aea.chunk.js"
+    "static/js/main.d2d54b36.chunk.js"
   ]
 }
