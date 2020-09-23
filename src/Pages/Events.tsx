@@ -7,6 +7,8 @@ export default function Arcade() {
   return(
     <div>
       <Header/>
+      <Box className="bkgdGrad" />
+
         <Grid
           container
           justify="flex-end"

@@ -18,6 +18,8 @@ export default function Micromouse() {
   return(
     <div style={{overflow:"hidden"}}>
       <Header/>
+      <Box style={{zIndex: -99, position: 'fixed', backgroundImage: 'linear-gradient(to bottom,  rgb(32,33,40), black)', width: '100%', height:'100%'}} />
+
       <Box paddingTop="3%"/>
       <img src={MMImage} className="mainBodyImage" width="100%" alt="logo" style={{opacity:"60%"}}/>
       <img src={MMTitle} className="mmTitle" style={{margin: '0% 5% 5%', width: '50%'}} alt="title" />

@@ -32,6 +32,8 @@ export default function Who() {
   return(
     <div>
       <Header/>
+      <Box className = "bkgdGrad"/>
+
       <img src={WhoTitle} style={{margin: '10% 5% 5%', width: '34%'}} className="whoTitle" alt = "Title"/>
       <div/>
 

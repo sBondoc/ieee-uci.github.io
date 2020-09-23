@@ -10,7 +10,7 @@ import {CssBaseline} from '@material-ui/core';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const theme = createMuiTheme({
-  palette: { 
+  palette: {
     background:{
       default: '#000000',
     },
@@ -20,7 +20,7 @@ const theme = createMuiTheme({
     },
   },
   overrides:{
-    
+
   },
   typography: {
     fontFamily: 'Source Code Pro, monospace',
@@ -48,7 +48,7 @@ function App() {
             <Route path="/about/board">
               <Board />
             </Route>
-            <Route path="/about/who">
+            <Route path="/about/getinvolved">
               <Who/>
             </Route>
             <Route path="/events">

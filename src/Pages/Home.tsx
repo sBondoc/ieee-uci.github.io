@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
-import mainImage from '../images/hex_home.svg';
+import mainImage from '../images/hex_home.png';
 import banner from '../images/home_about_banner.svg'
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
@@ -9,6 +9,7 @@ import salWeb from '../images/ws_salvador.png';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import Footer from '../Components/Footer';
+import {SubscribeBox} from '../Components/Footer';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import IconButton from '@material-ui/core/IconButton';
 import '../Styles/index.css';
@@ -18,7 +19,7 @@ dedicated to providing students opportunities to gain hands-on
 experience with projects in preparation for the real-world.
 Through our organization, student will be able to explore the
 field of engineering and hone new skills that are fundamental to
-developing state-of-the-art technology.  Our organization is
+developing state-of-the-art technology.  We are
 dedicated to helping students become the succesful engineer they envision
 themselves to be so that they can advance technology for humanity in
 their own passion.`;
@@ -145,19 +146,16 @@ export default function Home() {
   return(
     <div>
       <Header/>
-      <Box style={{zIndex: -99, position: 'fixed', backgroundImage: 'linear-gradient(to bottom,  rgb(32,33,40), black)', width: '100%', height:'100%'}} />
+      <Box className="bkgdGrad" />
       <Box style={{position: 'relative', textAlign: 'center', paddingBottom: '15vw'}}>
-        <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "100%", width: '80%', top: '5vw', left: '-1%'}}/>
-        <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2vw', letterSpacing: '5px', top: '42%', left:'50%', transform: 'translate(-50%, 0%)'}}><b>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</b></Typography>
+        <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "100%", width: '80%', top: '7vw', left: '-1%'}}/>
+        <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2vw', letterSpacing: '5px', top: '46%', left:'50%', transform: 'translate(-50%, 0%)'}}><b>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</b></Typography>
       </Box>
-      <Box style={{position:'relative'}}>
-        <img src={banner} width="100%" alt="Brace"/>
-        <Box style={{position:'absolute', width: '70%', top: '20%', bottom: '5%', left: '15%'}}>
-          <Typography className='mainAboutText' style={{textAlign: "center", position: 'absolute', fontSize: '1.3vw', padding: '5%'}}>{introText}</Typography>
+      <Box className="introBox">
+        <Box style={{position:'absolute', width: '48%', top: '0%', left: '5%'}}>
+          <Typography className='mainAboutText' style={{textAlign: "left", position: 'absolute', fontSize: "1.2vw", marginTop: '9%', marginBottom:'10%', marginRight: '5%'}}>{introText}</Typography>
         </Box>
-        <IconButton style={{opacity:"72%", color:"white", position: "absolute", right: "0%", bottom: "32%"}} aria-label="About Us" href="https://ieee-uci.github.io/about/who" target="_blank">
-          <ArrowRightIcon style={{fontSize:"3vw"}}/>
-        </IconButton>
+        <SubscribeBox/>
 
       </Box>
       <Box paddingLeft="15%" paddingTop="20%" paddingBottom="10%">

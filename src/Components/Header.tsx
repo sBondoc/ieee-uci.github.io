@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) =>
 
 const AboutOptions: {name: string, url: string}[] = [
   {name: 'Meet Our Board', url: '/about/board'},
-  {name: 'Who Are We?', url: '/about/who'}
+  {name: 'Get Involved', url: '/about/getinvolved'}
 ]
 
 const ProjectOptions: {name: string, url: string}[] = [
@@ -116,7 +116,7 @@ export default function Header() {
   };
 
   return(
-    <header className='App-header' style={{height: 60, background: 'linear-gradient(to right, #33BFFF, #2A6AC6)', position: 'fixed', width: '100%', zIndex: 999}}>
+    <header className='App-header' style={{height: 60, background: 'linear-gradient(to right, #1CB5E0, #2A6AC6)', position: 'absolute', width: '100%', zIndex: 999}}>
       <Grid container direction="row" justify="space-between" alignItems="center">
         <img src={logo} style={{height: 200, marginTop: -55}} className="App-logo" alt="logo" />
         <Box marginRight={4} marginTop={-10.5}>

@@ -12,6 +12,8 @@ export default function Board() {
   return(
     <div>
       <Header/>
+      <Box className="bkgdGrad" />
+
       <Box paddingTop="5%">
         <img src={groupImage} style={{marginLeft: '5%', marginTop: '7%', width: '90%'}} alt = "Group Photo"/>
       </Box>
@@ -23,7 +25,7 @@ export default function Board() {
       <Grid container direction="column">
         <Grid className="flipRow" container item direction="row" justify="space-evenly">
           <Grid item>
-            <div className= "flipCard"/> 
+            <div className= "flipCard"/>
           </Grid>
           <Grid item>
             <div className= "flipCard"/>

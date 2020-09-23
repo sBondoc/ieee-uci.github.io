@@ -40,7 +40,31 @@ function SocialIcon(props: {src: string, link: string}){
   );
 }
 
-export {SocialIcon}
+function SubscribeBox() {
+  const classes = useStyles();
+
+  return(
+  <Box className = "subscribeBox">
+    <Grid
+      container
+      direction="column"
+      justify="flex-start"
+      alignItems="center"
+      style={{marginTop: "5%", marginRight: "5%", marginBottom: "5%"}}
+    >
+      <h3 style={{marginLeft:"-5%"}}>JOIN OUR MAILING LIST:</h3>
+      <form action="https://formspree.io/xlepjdlk" method="POST">
+          <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
+          <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>
+          <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry} alt="lnameentry"/></label>
+          <button className="submit" type="submit" style={{marginLeft:'32%', marginRight:'35%', width: '30%', fontSize: '1.2vw', marginTop: '2%', textAlign: 'center'}}>SUBMIT</button>
+      </form>
+    </Grid>
+  </Box>
+  );
+}
+
+export {SocialIcon, SubscribeBox};
 
 export default function Footer() {
   const classes = useStyles();
@@ -85,7 +109,7 @@ export default function Footer() {
               alignItems="center"
               style={{width: "30%", marginLeft: "-5%", marginRight: "5%", marginBottom: "5%"}}
             >
-              <h2 className="newsHead">JOIN OUR MAILING LIST:</h2>
+              <h2>JOIN OUR MAILING LIST:</h2>
               <form action="https://formspree.io/xlepjdlk" method="POST">
                   <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
                   <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>

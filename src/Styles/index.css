@@ -1,5 +1,18 @@
 
-.advanceText{
+
+.bkgdGrad{
+  z-index: -99;
+  position: fixed;
+  background-image: linear-gradient(to bottom, rgb(32,33,40), black);
+  width: 100%;
+  height:100%;
+}
+
+.introBox{
+  position: relative;
+  clip-path: polygon(52% 0, 60% 20%, 100% 20%, 100% 100%, 60% 100%, 52% 80%, 0 80%, 0 0);
+  background-image: linear-gradient(to right, #0082c8, #2A6AC6);
+  height: 30vw;
 }
 
 .newsletter{
@@ -76,8 +89,6 @@ input[type=text]{
 .flipContainer{
   margin-left: 5%;
   margin-right: 5%;
-  background-image: linear-gradient(to bottom, rgb(33,32,40), black);
-  background-color: rgb(33,32,40);
   clip-path:
     polygon(
       0% 100px,                 /* top left */
@@ -108,10 +119,19 @@ input[type=text]{
 
 .footerBox{
   clip-path: polygon(50% 32%, 62% 12%, 100% 12%, 100% 100%, 0 100%, 0 32%);
-  background-image: linear-gradient(to right, #33BFFF, #2A6AC6);
+  background-image: linear-gradient(to right, #1CB5E0, #2A6AC6);
 }
 
 .footerIcons{
+}
+
+.subscribeBox{
+  position: absolute;
+  top: 15%;
+  margin-left: 65%;
+  margin-right: 5%;
+  font-size: 1.1vw;
+
 }
 
 .webBanner{
