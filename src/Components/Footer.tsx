@@ -114,7 +114,7 @@ export default function Footer() {
                   <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
                   <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>
                   <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry} alt="lnameentry"/></label>
-                  <button className="submit" type="submit" style={{width: '95%', marginTop: '5%', textAlign: 'center'}}>Submit</button>
+                  <button className="submit" type="submit" style={{width: '30%', fontSize: '120%', margin: '5% 33%', textAlign: 'center'}}>SUBMIT</button>
               </form>
             </Grid>
         </Grid>

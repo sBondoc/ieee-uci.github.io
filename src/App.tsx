@@ -23,7 +23,7 @@ const theme = createMuiTheme({
 
   },
   typography: {
-    fontFamily: 'Source Code Pro, monospace',
+    fontFamily: 'Nunito Sans, sans-serif',
     button: {
       fontSize: 20,
     }

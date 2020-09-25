@@ -90,15 +90,15 @@ function DropDown(props: {name: string, options: {name: string, url: string}[]})
               {...TransitionProps}
               style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
             >
-              <Paper>
+              <Box style={{ backgroundColor: '#2A6AC6', textAlign: 'center', borderRadius: "5%", boxShadow: "0px 4px 4px black"}}>
                 <ClickAwayListener onClickAway={(event: React.MouseEvent<EventTarget>) => handleClose(event, "")}>
                   <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     {props.options.map((option) => (
-                      <MenuItem style={{color: 'black'}} onClick={(event: React.MouseEvent<EventTarget>) => handleClose(event, option.url)}>{option.name}</MenuItem>
+                      <MenuItem style={{color: 'white'}} onClick={(event: React.MouseEvent<EventTarget>) => handleClose(event, option.url)}>{option.name}</MenuItem>
                     ))}
                   </MenuList>
                 </ClickAwayListener>
-              </Paper>
+              </Box>
             </Grow>
           )}
         </Popper>

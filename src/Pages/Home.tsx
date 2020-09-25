@@ -59,7 +59,8 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
   },
   activePlace:{
-    color: "white"
+    color: "white",
+    fontSize: "200%",
   },
   inactivePlace:{
     color: "grey"
@@ -74,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   image: {
     position: 'relative',
     width: "100%",
-    height: 350,
+    height: "45vh",
     [theme.breakpoints.down('xs')]: {
       width: '100% !important', // Overrides inline-style
     },
@@ -149,26 +150,27 @@ export default function Home() {
       <Box className="bkgdGrad" />
       <Box style={{position: 'relative', textAlign: 'center', paddingBottom: '15vw'}}>
         <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "100%", width: '80%', top: '7vw', left: '-1%'}}/>
-        <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2vw', letterSpacing: '5px', top: '46%', left:'50%', transform: 'translate(-50%, 0%)'}}><b>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</b></Typography>
+        <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2.1vw', letterSpacing: '6px', top: '46%', left:'50%', transform: 'translate(-50%, 0%)'
+}}>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</Typography>
       </Box>
       <Box className="introBox">
         <Box style={{position:'absolute', width: '48%', top: '0%', left: '5%'}}>
-          <Typography className='mainAboutText' style={{textAlign: "left", position: 'absolute', fontSize: "1.2vw", marginTop: '9%', marginBottom:'10%', marginRight: '5%'}}>{introText}</Typography>
+          <Typography className='mainAboutText' style={{textAlign: "left", position: 'absolute', fontSize: "1.4vw", marginTop: '8%', marginBottom:'10%', marginLeft: '5%'}}>{introText}</Typography>
         </Box>
         <SubscribeBox/>
 
       </Box>
-      <Box paddingLeft="15%" paddingTop="20%" paddingBottom="10%">
-        <Typography >/ SPRING 2020</Typography>
-        <Box paddingTop="2%" paddingBottom="2%">
-          <Typography variant="h5">Website Design Competition Winners</Typography>
+      <Box style={{position:"relative", marginTop: "25%", paddingLeft:"15%", paddingBottom:"10%"}}>
+        <Typography variant="h5">/ SPRING 2020</Typography>
+        <Box paddingTop="2%" paddingBottom="-2%">
+          <Typography variant="h4">Website Design Competition Winners</Typography>
         </Box>
       </Box>
 
 
 
-      <Box style={{position:'relative', marginTop: "25%"}}>
-        <Box className="webBanner" marginBottom="10%" marginTop="-30%">
+      <Box style={{position:"relative", marginTop: "25vw"}}>
+        <Box className="webBanner" marginBottom="10vw" marginTop="-30vw">
         <ButtonBase
           focusRipple
           key={activeWeb.title}
@@ -177,9 +179,9 @@ export default function Home() {
           style={{
             width: "40%",
             position: "sticky",
-            marginTop: "4%",
+            marginTop: "4vh",
             left: "12%",
-            top: "15%",
+            top: "20%",
             boxShadow: "0px 5px  20px black"
           }}
           href={activeWeb.webURL}
@@ -214,7 +216,7 @@ export default function Home() {
         justify="space-evenly"
         alignItems="center"
       >
-      <div className={classes.root} style={{marginTop:"-50vw", paddingLeft:"15%"}}>
+      <div className={classes.root} style={{marginTop:"-50%", paddingLeft:"18%"}}>
         {images.map((image) => (
           <Grid
             container
@@ -229,7 +231,7 @@ export default function Home() {
                   classes.activePlace : classes.inactivePlace
                 }
               >
-                {image.place} {image.title}
+                {image.place}<Box paddingRight="50px"/>{image.title}
               </Button>
             </Box>
           </Grid>
