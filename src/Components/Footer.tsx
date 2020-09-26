@@ -18,7 +18,7 @@ import '../Styles/index.css';
 
 const useStyles = makeStyles((theme) => ({
   socialMediaIcon: {
-    width: "45%",
+    width: "6vw",
   },
   socialIconBox:{
     marginRight: theme.spacing(-8),
@@ -50,14 +50,14 @@ function SubscribeBox() {
       direction="column"
       justify="flex-start"
       alignItems="center"
-      style={{marginTop: "5%", marginRight: "5%", marginBottom: "5%"}}
+      style={{marginTop: "5vh", marginRight: "5%", marginBottom: "5vh"}}
     >
       <h3 style={{marginLeft:"-5%"}}>JOIN OUR MAILING LIST:</h3>
       <form action="https://formspree.io/xlepjdlk" method="POST">
           <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
           <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>
           <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry} alt="lnameentry"/></label>
-          <button className="submit" type="submit" style={{marginLeft:'32%', marginRight:'35%', width: '30%', fontSize: '1.2vw', marginTop: '2%', textAlign: 'center'}}>SUBMIT</button>
+          <button className="submit" type="submit" style={{marginLeft:'32%', marginRight:'35%', width: '30%', fontSize: '1.2vw',textAlign: 'center'}}>SUBMIT</button>
       </form>
     </Grid>
   </Box>
@@ -78,12 +78,13 @@ export default function Footer() {
             justify="space-between"
             alignItems="center"
           >
-        <Box paddingTop="4%" marginLeft="4%" className="footerIcons">
+        <Box paddingTop="4%" marginLeft="4%" className="footerIcons" style={{width:"40%"}}>
           <Grid
             container
             direction="row"
-            justify="flex-start"
+            justify="space-between"
             alignItems="center"
+            style={{width:"100%"}}
           >
             <Box className={classes.socialIconBox}>
               <IconButton className={classes.socialMediaIcon}>

@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Home from './Pages/Home';
 import Board from './Pages/Board'
@@ -8,6 +9,7 @@ import Micromouse from './Pages/Micromouse';
 import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
 import {CssBaseline} from '@material-ui/core';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 const theme = createMuiTheme({
   palette: {
