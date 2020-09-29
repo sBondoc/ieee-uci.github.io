@@ -8,6 +8,7 @@ import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
 import eventECP from '../images/ecp_fall_20.jpg';
 import eventECF from '../images/ecf_fall_20.png';
+import eventOPS from '../images/ops_fall_20.jpg';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import Footer from '../Components/Footer';
@@ -182,7 +183,7 @@ export default function Home() {
         <Box style={{paddingLeft:"15%", paddingBottom:"5%"}}>
           <Typography variant="h5">/ FALL 2020</Typography>
           <Box paddingTop="2%" paddingBottom="-2%">
-            <Typography variant="h4">News & Events</Typography>
+            <Typography variant="h4">Upcoming Events</Typography>
           </Box>
         </Box>
         <Carousel style={{marginLeft:"15%", width: "70%", height: "auto"}}>
@@ -212,7 +213,7 @@ export default function Home() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={salWeb}
+              src={eventOPS}
               alt="Third slide"
             />
 

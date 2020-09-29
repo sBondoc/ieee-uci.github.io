@@ -108,12 +108,28 @@ input[type=text]{
 }
 
 .flipCard {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 50%;
+  width: 18vw;
+  height: 18vw;
+  border-radius: 0%;
   border-style: solid;
   border-color: #33BFFF;
-  border-width: 2px;
+  border-width: 0px;
+  overflow: hidden;
+}
+
+.flipImage {
+  width: 18vw;
+}
+
+.flipName{
+  text-align: center;
+  padding-top: 15%;
+}
+
+.flipPosition{
+  text-align: center;
+  font-family: "Source Code Pro, monospace";
+  color: grey;
 }
 
 .footerBox{
@@ -131,6 +147,10 @@ input[type=text]{
   margin-right: 5%;
   font-size: 1.1vw;
 
+}
+
+.subscribeBoxWho{
+  position: relative;
 }
 
 .webBanner{
