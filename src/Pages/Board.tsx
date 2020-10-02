@@ -27,11 +27,11 @@ export default function Board() {
       <Header/>
       <Box className="bkgdGrad" />
 
-      <Box paddingTop="0%">
+      <Box style={{backgroundImage:"linear-gradient(to bottom, white, #dadfe2, #aab8c4)"}}>
         <img src={groupImage} style={{marginLeft: '5%', marginTop: '-18%', width: '90%', clipPath: 'inset(32% 0% 32% 0%)'}} alt = "Group Photo"/>
       </Box>
-      <Box paddingTop="-35%" paddingBottom="5%">
-        <img src={BoardTitle} style={{marginLeft: '5%', marginTop: '-25%', width: '30%'}} className="boardTitle" alt = "Title"/>
+      <Box style={{paddingTop:"-35%", paddingBottom:"5%"}}>
+        <img src={BoardTitle} style={{marginLeft: '5%', marginTop: '-30%', width: '30%', filter:"drop-shadow(-2px -2px 10px grey)"}} className="boardTitle" alt = "Title"/>
       </Box>
 
       <Box className="flipContainer">

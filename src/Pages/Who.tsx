@@ -4,7 +4,7 @@ import {Typography, Box} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css'
 import WhoTitle from '../images/about_ieee.svg'
-import WhoImage from '../images/ieee_soldier.png'
+import WhoImage from '../images/ieee_soldier.jpg'
 import discordIcon from '../images/discordicon.png';
 import emailIcon from '../images/emailicon.png';
 import fbIcon from '../images/facebookicon.png';
@@ -18,6 +18,10 @@ import Overlay from 'react-bootstrap/Overlay';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import { TextField } from '@material-ui/core';
+import Carousel from 'react-bootstrap/Carousel';
+import eventECP from '../images/ecp_fall_20.jpg';
+import eventECF from '../images/ecf_fall_20.png';
+import eventOPS from '../images/ops_fall_20.jpg';
 
 
 
@@ -77,11 +81,46 @@ export default function Who() {
 
       <img src={WhoTitle} style={{margin: '10% 5% 5%', width: '34%'}} className="whoTitle" alt = "Title"/>
       <div/>
+      <Carousel style={{width: '48vw', marginTop:"0%", top: "20%", left: "5%", position:'sticky', boxShadow: "0 0 25px black"}}>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={WhoImage}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={eventECF}
+            alt="Third slide"
+          />
 
-      <img src={WhoImage} style={{width: '48vw', marginTop:"0%", top: "20%", left: "5%", position:'sticky'}} alt="IEEE Soldier"/>
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={eventOPS}
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
 
       <Box paddingTop="4%" paddingBottom="25vw" style={{marginLeft: "59%"}}>
-        <Typography style={{top:"25vw", position: "absolute", marginRight: "5%"}} variant="h2">Who are we?</Typography>
+        <Typography style={{top:"25vw", position: "absolute", marginRight: "5%"}} variant="h2">Who Are We?</Typography>
         <Typography style={{top:"30vw", paddingTop:"5%", position: "absolute", marginRight: "5%"}}>{introText}</Typography>
       </Box>
 
@@ -111,7 +150,7 @@ export default function Who() {
 
       <Box paddingTop="5%" paddingBottom="25vw" style={{position:'relative', marginLeft: "59%", marginRight: "5%"}}>
         <Typography variant="h2">Membership</Typography>
-        <Typography style={{paddingTop:"5%"}}>{membershipText}</Typography>
+        <Typography style={{paddingTop:"5%", paddingBottom: "5%"}}>{membershipText}</Typography>
         <ul>
           <li>Access to our Electrical Lab</li>
             <ul>
@@ -129,8 +168,18 @@ export default function Who() {
               <li>Microwaves, Fridges, Freezer</li>
             </ul>
           <li>Students may request an IEEE project box to store hardware for class or personal projects.</li>
+          <li>Exclusive members-only events like our IEEE United state-wide virtual career fair</li>
         </ul>
-        <Typography style={{paddingTop:"5%"}}> E-mail us at <b>ieee.ucirvine@gmail.com</b> if you'd like to become a member. </Typography>
+        <Typography>NOTE: Not being a paid member does NOT exclude you from workshops and programs such as OPS.</Typography>
+        <Box style={{backgroundImage: "linear-gradient(to bottom, white, #c8d6eb", borderWidth: "1px", borderStyle: "solid", borderColor: "white", marginTop: "10%", padding:"5%", borderRadius:"2%"}}>
+        <Typography variant="h4" style={{marginTop:"5%", paddingBottom: "5%", textAlign: "center", color: "black"}}><b>Become a Member: </b></Typography>
+        <ol style={{fontSize:"120%", color: "black"}}>
+          <li>Fill out our membership application here: <a href="http://bit.ly/IEEE-UCI_SignUp2020">http://bit.ly/IEEE-UCI_SignUp2020</a></li>
+          <li>Send a payment of $30 to our venmo: ieee_uci with a comment including your name and Discord tag.</li>
+          <li>Join our Discord community if you haven't already, and await a membership tag to be added to your name in our server.</li>
+          <li>Your name will be checked on our roster when attending members-only events and accessing lab equipment. Welcome aboard!</li>
+        </ol>
+        </Box>
       </Box>
 
       <Footer/>

@@ -66,7 +66,6 @@ const useStyles = makeStyles((theme) => ({
   },
   activePlace:{
     color: "white",
-    fontSize: "200%",
   },
   inactivePlace:{
     color: "grey"
