@@ -85,10 +85,11 @@ input[type=text]{
   transition: all 0.2s ease;
 }
 
+
 .flipContainer{
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: -15%;
+  margin-top: -10%;
   clip-path:
     polygon(
       0% 100px,                 /* top left */
@@ -108,29 +109,34 @@ input[type=text]{
 
 }
 
-.flipCard {
+.flipPortrait {
   width: 18vw;
   height: 18vw;
-  border-radius: 0%;
-  border-style: solid;
-  border-color: #33BFFF;
-  border-width: 0px;
   overflow: hidden;
+  clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+}
+
+.flipCard{
+    background-color: rgb(33,32,40);
 }
 
 .flipImage {
   width: 18vw;
+
 }
 
 .flipName{
   text-align: center;
-  padding-top: 15%;
+  padding-top: 5%;
 }
 
 .flipPosition{
   text-align: center;
   font-family: "Source Code Pro, monospace";
   color: grey;
+  padding-bottom: 7%;
+  padding-top: 2%;
+
 }
 
 .footerBox{

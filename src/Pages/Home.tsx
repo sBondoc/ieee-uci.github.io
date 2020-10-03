@@ -23,10 +23,10 @@ import { useHistory } from "react-router-dom";
 const introText = `IEEE at UC Irvine is a student organization
 dedicated to providing students opportunities to gain hands-on
 experience with projects in preparation for the real-world.
-Through our organization, student will be able to explore the
+Through our organization, students will be able to explore the
 field of engineering and hone new skills that are fundamental to
 developing state-of-the-art technology.  We are
-dedicated to helping students become the succesful engineer they envision
+dedicated to helping students become the succesful engineers they envision
 themselves to be so that they can advance technology for humanity in
 their own passion.`;
 
@@ -180,9 +180,9 @@ export default function Home() {
 
       <Box style={{marginTop: "20%"}}>
         <Box style={{paddingLeft:"15%", paddingBottom:"5%"}}>
-          <Typography variant="h5">/ FALL 2020</Typography>
+          <Typography variant="h5"><b>/ FALL 2020</b></Typography>
           <Box paddingTop="2%" paddingBottom="-2%">
-            <Typography variant="h4">Upcoming Events</Typography>
+            <Typography variant="h4" style={{letterSpacing:"2px"}}><b>Upcoming Events</b></Typography>
           </Box>
         </Box>
         <Carousel style={{marginLeft:"15%", width: "70%", height: "auto"}}>
@@ -229,9 +229,9 @@ export default function Home() {
 
 
       <Box style={{position:"relative", marginTop: "25%", paddingLeft:"15%", paddingBottom:"10%"}}>
-        <Typography variant="h5">/ SPRING 2020</Typography>
+        <Typography variant="h5"><b>/ SPRING 2020</b></Typography>
         <Box paddingTop="2%" paddingBottom="-2%">
-          <Typography variant="h4">Website Design Competition Winners</Typography>
+          <Typography variant="h4"><b>Website Design Competition Winners</b></Typography>
         </Box>
       </Box>
 

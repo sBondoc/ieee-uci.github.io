@@ -42,8 +42,8 @@ const getInvolvedText = "Under normal circumstances, our lab room at ICS 225 wou
 const membershipText = "If you wish to support our club as well as gain greater access to our equipment and resources, you can become an official IEEE UCI member for only $30 a year! This allows us to host more workshops and events, attend conferences such as SPAC and RLDC, and sponsor more projects. Full membership benefits include:"
 
 const popover = (
-  <Popover id="popover-basic" style={{backgroundColor: 'rgba(32,33,40,0%)', borderWidth:"2", borderColor:"#1CB5E0", height:"300px", width: "300px"}}>
-    <Popover.Title as="h3" style={{  backgroundColor: 'rgba(32,33,40,0%)', color: "white", borderColor: "#1CB5E0", textAlign:"center"}}>Join Our Mailing List</Popover.Title>
+  <Popover id="popover-basic" style={{backgroundColor: '#2A6AC6', height:"300px", width: "300px"}}>
+    <Popover.Title as="h3" style={{  backgroundColor: '#2A6AC6', color: "white", textAlign:"center"}}>Subscribe to Our Newsletter</Popover.Title>
     <Popover.Content>
       <Box>
         <Grid
@@ -51,12 +51,12 @@ const popover = (
           direction="column"
           justify="flex-start"
           alignItems="center"
-          style={{marginTop: "5vh", marginRight: "5%", marginBottom: "5vh"}}
+          style={{marginTop: "2vh", marginRight: "5%", marginBottom: "5vh"}}
         >
           <form action="https://formspree.io/xlepjdlk" method="POST">
-              <TextField id="standard-basic" label="E-mail" name="e-mail address"/>
-              <TextField id="standard-basic" label="First Name" name="first name"/>
-              <TextField id="standard-basic" label="Last Name" name="last name"/>
+              <TextField id="outlined-basic" label="E-mail"  variant="outlined" margin="dense" name="e-mail address"/>
+              <TextField id="outlined-basic" label="First Name" variant="outlined" margin="dense" name="first name"/>
+              <TextField id="outlined-basic" label="Last Name"  variant="outlined" margin="dense" name="last name"/>
 
               <button className="submit" type="submit" style={{marginLeft:'35%', marginTop: "5%", marginRight:'35%', width: '30%', fontSize: '100%', textAlign: 'center'}}>SUBMIT</button>
           </form>
@@ -168,14 +168,14 @@ export default function Who() {
               <li>Microwaves, Fridges, Freezer</li>
             </ul>
           <li>Students may request an IEEE project box to store hardware for class or personal projects.</li>
-          <li>Exclusive members-only events like our IEEE United state-wide virtual career fair</li>
+          <li>Access to members-only events like our IEEE United state-wide virtual career fair</li>
         </ul>
         <Typography>NOTE: Not being a paid member does NOT exclude you from workshops and programs such as OPS.</Typography>
         <Box style={{backgroundImage: "linear-gradient(to bottom, white, #c8d6eb", borderWidth: "1px", borderStyle: "solid", borderColor: "white", marginTop: "10%", padding:"5%", borderRadius:"2%"}}>
         <Typography variant="h4" style={{marginTop:"5%", paddingBottom: "5%", textAlign: "center", color: "black"}}><b>Become a Member: </b></Typography>
         <ol style={{fontSize:"120%", color: "black"}}>
           <li>Fill out our membership application here: <a href="http://bit.ly/IEEE-UCI_SignUp2020">http://bit.ly/IEEE-UCI_SignUp2020</a></li>
-          <li>Send a payment of $30 to our venmo: ieee_uci with a comment including your name and Discord tag.</li>
+          <li>Send a payment of $25 to our venmo: ieee_uci with a comment including your name, uci email and Discord tag.</li>
           <li>Join our Discord community if you haven't already, and await a membership tag to be added to your name in our server.</li>
           <li>Your name will be checked on our roster when attending members-only events and accessing lab equipment. Welcome aboard!</li>
         </ol>

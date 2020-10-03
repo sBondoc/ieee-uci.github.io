@@ -10,15 +10,16 @@ import discordIcon from '../images/discordicon.png';
 import githubIcon from '../images/githubicon.png';
 import textBrace from '../images/textBrace.png';
 import textEntry from '../images/textentry.png'
+import diamond from '../images/ieee_diamond.svg';
 import IconButton from '@material-ui/core/IconButton';
-import {Box, Grid} from '@material-ui/core';
+import {Typography, Box, Grid} from '@material-ui/core';
 import '../Styles/index.css';
 
 
 
 const useStyles = makeStyles((theme) => ({
   socialMediaIcon: {
-    width: "6vw",
+    width: "5vw",
   },
   socialIconBox:{
     marginRight: theme.spacing(-8),
@@ -72,19 +73,29 @@ export default function Footer() {
   return(
     <Box paddingTop="10%" className='footerBox'>
 
-        <Grid
+
+          <Grid
             container
             direction="row"
-            justify="space-between"
             alignItems="center"
-          >
-        <Box paddingTop="4%" marginLeft="4%" className="footerIcons" style={{width:"40%"}}>
+            lg={8}
+            style={{padding:"4%"}}
+            >
+            <img src={diamond} style={{width:"20%"}}/>
+            <Box style={{}}>
+              <Typography variant="h5" style={{textAlign:"left", marginLeft:"4%", whiteSpace:"nowrap"}}><b>IEEE Student Branch <br/> University of California, Irvine</b></Typography>
+              <Typography style={{borderStyle:"solid", borderColor:"white", borderWidth:"0px", marginTop:"4%", marginLeft:"4%", padding:"5px 10px 5px 10px"}}>ICS 225 Irvine CA, 92617 <br/> ieee.ucirvine@gmail.com</Typography>
+            </Box>
+          </Grid>
+
+        <Box style={{width:"30%", marginLeft:"auto", marginRight:"auto"}}>
           <Grid
             container
             direction="row"
             justify="space-between"
             alignItems="center"
-            style={{width:"100%"}}
+            spacing={7}
+            style={{width:"100%", paddingBottom:"4%"}}
           >
             <Box className={classes.socialIconBox}>
               <IconButton className={classes.socialMediaIcon}>
@@ -103,22 +114,7 @@ export default function Footer() {
 
 
           </Box>
-            <Grid
-              container
-              direction="column"
-              justify="flex-start"
-              alignItems="center"
-              style={{width: "30%", marginLeft: "-5%", marginRight: "5%", marginBottom: "5%"}}
-            >
-              <h2>JOIN OUR MAILING LIST:</h2>
-              <form action="https://formspree.io/xlepjdlk" method="POST">
-                  <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
-                  <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>
-                  <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry} alt="lnameentry"/></label>
-                  <button className="submit" type="submit" style={{width: '30%', fontSize: '120%', margin: '5% 33%', textAlign: 'center'}}>SUBMIT</button>
-              </form>
-            </Grid>
-        </Grid>
+
     </Box>
   );
 }
