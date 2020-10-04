@@ -4,7 +4,6 @@ import {Typography, Box} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import '../Styles/index.css'
 import WhoTitle from '../images/about_ieee.svg'
-import WhoImage from '../images/ieee_soldier.jpg'
 import discordIcon from '../images/discordicon.png';
 import emailIcon from '../images/emailicon.png';
 import fbIcon from '../images/facebookicon.png';
@@ -19,9 +18,13 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import { TextField } from '@material-ui/core';
 import Carousel from 'react-bootstrap/Carousel';
-import eventECP from '../images/ecp_fall_20.jpg';
-import eventECF from '../images/ecf_fall_20.png';
-import eventOPS from '../images/ops_fall_20.jpg';
+import image_zoom from '../images/who/zoom_board.png';
+import image_soldier from '../images/who/ieee_soldier.jpg'
+import image1 from '../images/who/2018_group.jpg'
+import image2 from '../images/who/beach_logo.jpg';
+import image3 from '../images/who/old_gaming.jpg';
+import image4 from '../images/who/old_group.jpg';
+import image5 from '../images/who/alan_and_friends.jpg';
 
 
 
@@ -39,7 +42,7 @@ outside of the university.`
 
 const getInvolvedText = "Under normal circumstances, our lab room at ICS 225 would be open on weekdays (and sometimes weekends) as a place to study, hang out or destress. However, seeing as it is currently closed, we invite you to join our Discord Server instead! The IEEE UCI Discord serves as the hub of all of our activities, including study help, career advice, workshops, socials, memes, and more. Join us on Discord and subscribe to our newsletter to stay up to date with our club and take advantage of all the resources we have to offer."
 
-const membershipText = "If you wish to support our club as well as gain greater access to our equipment and resources, you can become an official IEEE UCI member for only $30 a year! This allows us to host more workshops and events, attend conferences such as SPAC and RLDC, and sponsor more projects. Full membership benefits include:"
+const membershipText = "If you wish to support our club as well as gain greater access to our equipment and resources, you can become an official IEEE UCI member for only $25 a year! This allows us to host more workshops and events, attend conferences such as SPAC and RLDC, and sponsor more projects. Full membership benefits include:"
 
 const popover = (
   <Popover id="popover-basic" style={{backgroundColor: '#2A6AC6', height:"300px", width: "300px"}}>
@@ -81,41 +84,56 @@ export default function Who() {
 
       <img src={WhoTitle} style={{margin: '10% 5% 5%', width: '34%'}} className="whoTitle" alt = "Title"/>
       <div/>
-      <Carousel style={{width: '48vw', marginTop:"0%", top: "20%", left: "5%", position:'sticky', boxShadow: "0 0 25px black"}}>
+      <Carousel style={{width: '48vw', marginTop:"0%", top: "10%", left: "5%", position:'sticky', boxShadow: "0 0 25px black"}}>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={WhoImage}
+            src={image_soldier}
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={eventECF}
-            alt="Third slide"
+            src={image_zoom}
+            alt="Second slide"
+            style={{marginTop: '-20%', marginBottom:"-5%", width: '90%', clipPath: 'inset(32% 0% 32% 0%)'}}
           />
-
-          <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={eventOPS}
+            src={image1}
             alt="Third slide"
           />
-
-          <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image2}
+            alt="Fourth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image3}
+            alt="Fifth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image4}
+            alt="Sixth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image5}
+            alt="Seventh slide"
+          />
         </Carousel.Item>
       </Carousel>
 

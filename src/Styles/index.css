@@ -89,18 +89,22 @@ input[type=text]{
 .flipContainer{
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: -10%;
-  clip-path:
-    polygon(
-      0% 100px,                 /* top left */
-      100px 0%,                 /* top left */
-      calc(100% - 100px) 0%,    /* top right */
-      100% 100px,               /* top right */
-      100% calc(100% - 100px),  /* bottom right */
-      calc(100% - 100px) 100%,  /* bottom right */
-      100px 100%,               /* bottom left */
-      0 calc(100% - 100px)      /* bottom left */
+  margin-top: -5%;
+  margin-bottom:5%;
+/*  clip-path:
+      polygon(
+      0% 100px,
+      100px 0%,
+      calc(100% - 100px) 0%,
+      100% 100px,
+      100% calc(100% - 100px),
+      calc(100% - 100px) 100%,
+      100px 100%,
+      0 calc(100% - 100px)      
     );
+
+  background-image: linear-gradient(to top, #aab8c4, #aab8c4);
+*/
 }
 
 .flipRow{
@@ -118,6 +122,8 @@ input[type=text]{
 
 .flipCard{
     background-color: rgb(33,32,40);
+    filter: drop-shadow(-2px -2px 8px black);
+
 }
 
 .flipImage {
@@ -133,7 +139,7 @@ input[type=text]{
 .flipPosition{
   text-align: center;
   font-family: "Source Code Pro, monospace";
-  color: grey;
+  color: #aab8c4;
   padding-bottom: 7%;
   padding-top: 2%;
 
