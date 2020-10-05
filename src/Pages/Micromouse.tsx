@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../Components/Header';
 import MMImage from '../images/micromouse_maze.svg';
-import MMTitle from '../images/projects_micromouse.svg'
 import MMWhat from '../images/mm1.png';
 import MMWho from '../images/mm2.jpg';
 import MMJoin from '../images/mm3.png';
@@ -20,8 +19,8 @@ export default function Micromouse() {
       <Header/>
       <Box className = "bkgdGrad"/>
       <Box className = "headerBox">
-        <Typography variant="h6"className="title"> projects</Typography>
-        <Typography variant="h6" className="pageTitle"> micromouse</Typography>
+        <Typography variant="h6"className="title"> PROJECTS</Typography>
+        <Typography variant="h6" className="pageTitle"> MICROMOUSE</Typography>
         <br/>
         <svg className="divider"/>
       </Box>

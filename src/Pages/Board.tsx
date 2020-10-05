@@ -1,8 +1,6 @@
 import React from 'react';
 import Header from '../Components/Header';
-import BoardTitle from '../images/about_board.svg'
 import Footer from '../Components/Footer';
-import groupImage from '../images/who/zoom_board.png';
 import {Typography, Box, Grid} from '@material-ui/core';
 import john from '../images/board/john.jpg';
 import alan from '../images/board/alan.png';
@@ -32,13 +30,6 @@ export default function Board() {
 
       <Box style={{marginLeft:"10%", marginRight:"10%", marginBottom:"7%"}}>
         <Typography variant="h4" style={{letterSpacing:"5px", paddingBottom:"2%", borderBottom:"1px solid #aab8c4"}}> 2020 - 2021 </Typography>
-      </Box>
-
-      <Box style={{paddingTop:"30%", marginBottom:"-10%"}}>
-        <img src={BoardTitle} style={{marginLeft: '5%', marginTop: '-34%', width: '25%'}} className="boardTitle" alt = "Title"/>
-      </Box>
-      <Box style={{backgroundImage:"linear-gradient(to bottom, white, #aab8c4)"}}>
-        <img src={groupImage} style={{marginLeft: '5%', marginTop: '-20%', marginBottom:"-5%", width: '90%', clipPath: 'inset(32% 0% 32% 0%)', filter:"drop-shadow(-4px -2px 3px grey)"} } alt="GroupPhoto"/>
       </Box>
 
       <Box className="flipContainer">

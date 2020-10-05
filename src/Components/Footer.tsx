@@ -3,16 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import emailIcon from '../images/emailicon.png';
 import fbIcon from '../images/facebookicon.png';
 import igIcon from '../images/instagramicon.png';
-// import twitterIcon from '../images/twittericon.png';
-// import snapchatIcon from '../images/snapchaticon.png';
 import linkedInIcon from '../images/linkedinicon.png';
 import discordIcon from '../images/discordicon.png';
 import githubIcon from '../images/githubicon.png';
-// import textBrace from '../images/textBrace.png';
-// import textEntry from '../images/textentry.png'
 import diamond from '../images/ieee_diamond.svg';
 import IconButton from '@material-ui/core/IconButton';
-import {Typography, Box, Grid, TextField} from '@material-ui/core';
+import {Typography, Box, Grid} from '@material-ui/core';
 import '../Styles/index.css';
 
 const useStyles = makeStyles((theme) => ({

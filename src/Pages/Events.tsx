@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { Box, Grid, Typography } from '@material-ui/core';
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
 import xtreme1 from '../images/events/IEEEXtreme12.0-1.jpg';
 import xtreme2 from '../images/events/IEEEXtreme12.0-2.jpg';
 import xtreme3 from '../images/events/IEEEXtreme12.0-3.jpg';
