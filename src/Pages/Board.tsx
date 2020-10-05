@@ -2,12 +2,8 @@ import React from 'react';
 import Header from '../Components/Header';
 import BoardTitle from '../images/about_board.svg'
 import Footer from '../Components/Footer';
-<<<<<<< HEAD
-import {Typography, Box, Grid, Button} from '@material-ui/core';
-=======
-import groupImage from '../images/zoom_board.png';
+import groupImage from '../images/who/zoom_board.png';
 import {Typography, Box, Grid} from '@material-ui/core';
->>>>>>> 7375f738cf1dc9aa9900b5ad1039820123dcb844
 import john from '../images/board/john.jpg';
 import alan from '../images/board/alan.png';
 import joel from '../images/board/joel.jpg';
@@ -26,7 +22,6 @@ export default function Board() {
     <div>
       <Header/>
       <Box className="bkgdGrad" />
-<<<<<<< HEAD
       <Box className="bkgdGrad" />
       <Box className = "headerBox">
         <Typography variant="h6"className="title"> ABOUT</Typography>
@@ -39,7 +34,6 @@ export default function Board() {
         <Typography variant="h4" style={{letterSpacing:"5px", paddingBottom:"2%", borderBottom:"1px solid #aab8c4"}}> 2020 - 2021 </Typography>
       </Box>
 
-=======
       <Box style={{paddingTop:"30%", marginBottom:"-10%"}}>
         <img src={BoardTitle} style={{marginLeft: '5%', marginTop: '-34%', width: '25%'}} className="boardTitle" alt = "Title"/>
       </Box>
@@ -47,7 +41,6 @@ export default function Board() {
         <img src={groupImage} style={{marginLeft: '5%', marginTop: '-20%', marginBottom:"-5%", width: '90%', clipPath: 'inset(32% 0% 32% 0%)', filter:"drop-shadow(-4px -2px 3px grey)"} } alt="GroupPhoto"/>
       </Box>
 
->>>>>>> 7375f738cf1dc9aa9900b5ad1039820123dcb844
       <Box className="flipContainer">
       <Grid container direction="column">
         <Grid className="flipRow" container item direction="row" justify="space-evenly">
