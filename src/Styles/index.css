@@ -11,6 +11,15 @@
   height:100%;
 }
 
+p{
+  font-size: 120%;
+}
+
+li{
+  font-size: 120%;
+}
+
+
 .title{
   color: white;
   padding-top: 10%;
