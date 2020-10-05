@@ -18,7 +18,6 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import { TextField } from '@material-ui/core';
 import Carousel from 'react-bootstrap/Carousel';
-<<<<<<< HEAD
 import image_zoom from '../images/who/zoom_board.png';
 import image_soldier from '../images/who/ieee_soldier.jpg'
 import image1 from '../images/who/2018_group.jpg'
@@ -26,11 +25,9 @@ import image2 from '../images/who/beach_logo.jpg';
 import image3 from '../images/who/old_gaming.jpg';
 import image4 from '../images/who/old_group.jpg';
 import image5 from '../images/who/alan_and_friends.jpg';
-=======
 // import eventECP from '../images/ecp_fall_20.jpg';
 import eventECF from '../images/ecf_fall_20.png';
 import eventOPS from '../images/ops_fall_20.jpg';
->>>>>>> 7375f738cf1dc9aa9900b5ad1039820123dcb844
 
 
 
