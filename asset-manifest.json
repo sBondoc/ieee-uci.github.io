@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.fd172c14.chunk.css",
-    "main.js": "/static/js/main.2fd30e01.chunk.js",
-    "main.js.map": "/static/js/main.2fd30e01.chunk.js.map",
+    "main.js": "/static/js/main.88f895f4.chunk.js",
+    "main.js.map": "/static/js/main.88f895f4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4dbf4889.js",
     "runtime-main.js.map": "/static/js/runtime-main.4dbf4889.js.map",
     "static/css/2.11829350.chunk.css": "/static/css/2.11829350.chunk.css",
-    "static/js/2.ddcaaca6.chunk.js": "/static/js/2.ddcaaca6.chunk.js",
-    "static/js/2.ddcaaca6.chunk.js.map": "/static/js/2.ddcaaca6.chunk.js.map",
+    "static/js/2.3bb262ec.chunk.js": "/static/js/2.3bb262ec.chunk.js",
+    "static/js/2.3bb262ec.chunk.js.map": "/static/js/2.3bb262ec.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5cc9da719fe01929a54a1471a1ab3882.js": "/precache-manifest.5cc9da719fe01929a54a1471a1ab3882.js",
+    "precache-manifest.37bfabdb22722878ac6fbab12734bdf5.js": "/precache-manifest.37bfabdb22722878ac6fbab12734bdf5.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/static/css/2.11829350.chunk.css.map",
     "static/css/main.fd172c14.chunk.css.map": "/static/css/main.fd172c14.chunk.css.map",
-    "static/js/2.ddcaaca6.chunk.js.LICENSE.txt": "/static/js/2.ddcaaca6.chunk.js.LICENSE.txt",
+    "static/js/2.3bb262ec.chunk.js.LICENSE.txt": "/static/js/2.3bb262ec.chunk.js.LICENSE.txt",
     "static/media/about_board.svg": "/static/media/about_board.07cf6a7b.svg",
     "static/media/about_ieee.svg": "/static/media/about_ieee.201d536e.svg",
     "static/media/alan.png": "/static/media/alan.073166fb.png",
@@ -42,7 +42,6 @@
     "static/media/sam_b.png": "/static/media/sam_b.4c8b9b57.png",
     "static/media/sam_d.jpg": "/static/media/sam_d.a660e180.jpg",
     "static/media/sienna.jpg": "/static/media/sienna.11294808.jpg",
-    "static/media/textentry.png": "/static/media/textentry.e98f2663.png",
     "static/media/valen.png": "/static/media/valen.9a50d6cd.png",
     "static/media/ws_jack.png": "/static/media/ws_jack.fffd334b.png",
     "static/media/ws_kelly.png": "/static/media/ws_kelly.85bc647b.png",
@@ -52,8 +51,8 @@
   "entrypoints": [
     "static/js/runtime-main.4dbf4889.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.ddcaaca6.chunk.js",
+    "static/js/2.3bb262ec.chunk.js",
     "static/css/main.fd172c14.chunk.css",
-    "static/js/main.2fd30e01.chunk.js"
+    "static/js/main.88f895f4.chunk.js"
   ]
 }
