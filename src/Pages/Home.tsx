@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../Components/Header';
 import mainImage from '../images/hex_home.png';
-import banner from '../images/home_about_banner.svg'
+// import banner from '../images/home_about_banner.svg'
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
@@ -14,8 +14,8 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import Footer from '../Components/Footer';
 import {SubscribeBox} from '../Components/Footer';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import IconButton from '@material-ui/core/IconButton';
+// import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+// import IconButton from '@material-ui/core/IconButton';
 import '../Styles/index.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { useHistory } from "react-router-dom";
