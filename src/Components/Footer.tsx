@@ -3,19 +3,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import emailIcon from '../images/emailicon.png';
 import fbIcon from '../images/facebookicon.png';
 import igIcon from '../images/instagramicon.png';
-import twitterIcon from '../images/twittericon.png';
-import snapchatIcon from '../images/snapchaticon.png';
+// import twitterIcon from '../images/twittericon.png';
+// import snapchatIcon from '../images/snapchaticon.png';
 import linkedInIcon from '../images/linkedinicon.png';
 import discordIcon from '../images/discordicon.png';
 import githubIcon from '../images/githubicon.png';
-import textBrace from '../images/textBrace.png';
-import textEntry from '../images/textentry.png'
+// import textBrace from '../images/textBrace.png';
+// import textEntry from '../images/textentry.png'
 import diamond from '../images/ieee_diamond.svg';
 import IconButton from '@material-ui/core/IconButton';
 import {Typography, Box, Grid} from '@material-ui/core';
 import '../Styles/index.css';
-
-
 
 const useStyles = makeStyles((theme) => ({
   socialMediaIcon: {
@@ -42,7 +40,6 @@ function SocialIcon(props: {src: string, link: string}){
 }
 
 function SubscribeBox() {
-  const classes = useStyles();
 
   return(
   <Box className = "subscribeBox">
@@ -53,12 +50,10 @@ function SubscribeBox() {
       alignItems="center"
       style={{marginTop: "5vh", marginRight: "5%", marginBottom: "5vh"}}
     >
-      <h3 style={{marginLeft:"-5%"}}>JOIN OUR MAILING LIST:</h3>
-      <form action="https://formspree.io/xlepjdlk" method="POST">
-          <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
-          <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>
-          <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry} alt="lnameentry"/></label>
-          <button className="submit" type="submit" style={{marginLeft:'32%', marginRight:'35%', width: '30%', fontSize: '1.2vw',textAlign: 'center'}}>SUBMIT</button>
+      <form action="https://ieeeuci.us1.list-manage.com/subscribe/post?u=1db8428cfa01005b3e732b737&amp;id=bb8c036f5b" 
+        method="post" id="mc-embedded-subscribe-form" 
+        name="mc-embedded-subscribe-form" className="validate" target="_blank">
+          <button className="submit" type="submit" style={{marginTop: '50px', padding: '20px 50px 20px 50px', fontSize: '1.2vw',textAlign: 'center'}}>JOIN OUR MAILING LIST</button>
       </form>
     </Grid>
   </Box>
@@ -81,7 +76,7 @@ export default function Footer() {
             lg={8}
             style={{padding:"4%"}}
             >
-            <img src={diamond} style={{width:"20%"}}/>
+            <img src={diamond} style={{width:"20%"}} alt="diamond"/>
             <Box style={{}}>
               <Typography variant="h5" style={{textAlign:"left", marginLeft:"4%", whiteSpace:"nowrap"}}><b>IEEE Student Branch <br/> University of California, Irvine</b></Typography>
               <Typography style={{borderStyle:"solid", borderColor:"white", borderWidth:"0px", marginTop:"4%", marginLeft:"4%", padding:"5px 10px 5px 10px"}}>ICS 225 Irvine CA, 92617 <br/> ieee.ucirvine@gmail.com</Typography>

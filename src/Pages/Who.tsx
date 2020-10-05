@@ -6,20 +6,20 @@ import '../Styles/index.css'
 import WhoTitle from '../images/about_ieee.svg'
 import WhoImage from '../images/ieee_soldier.jpg'
 import discordIcon from '../images/discordicon.png';
-import emailIcon from '../images/emailicon.png';
+// import emailIcon from '../images/emailicon.png';
 import fbIcon from '../images/facebookicon.png';
 import igIcon from '../images/instagramicon.png';
 import IconButton from '@material-ui/core/IconButton';
-import {Grid, Button} from '@material-ui/core';
+import {Grid} from '@material-ui/core';
 import {SocialIcon} from '../Components/Footer';
-import {SubscribeBox} from '../Components/Footer';
+// import {SubscribeBox} from '../Components/Footer';
 import Popover from 'react-bootstrap/Popover';
-import Overlay from 'react-bootstrap/Overlay';
+// import Overlay from 'react-bootstrap/Overlay';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import { TextField } from '@material-ui/core';
 import Carousel from 'react-bootstrap/Carousel';
-import eventECP from '../images/ecp_fall_20.jpg';
+// import eventECP from '../images/ecp_fall_20.jpg';
 import eventECF from '../images/ecf_fall_20.png';
 import eventOPS from '../images/ops_fall_20.jpg';
 

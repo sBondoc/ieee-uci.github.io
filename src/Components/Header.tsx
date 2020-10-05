@@ -5,7 +5,7 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import MenuItem from '@material-ui/core/MenuItem';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
-import Paper from '@material-ui/core/Paper';
+// import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import MenuList from '@material-ui/core/MenuList';
 import HomeIcon from '@material-ui/icons/Home';

@@ -3,7 +3,7 @@ import Header from '../Components/Header';
 import BoardTitle from '../images/about_board.svg'
 import Footer from '../Components/Footer';
 import groupImage from '../images/zoom_board.png';
-import {Typography, Box, Grid, Button} from '@material-ui/core';
+import {Typography, Box, Grid} from '@material-ui/core';
 import john from '../images/board/john.jpg';
 import alan from '../images/board/alan.png';
 import joel from '../images/board/joel.jpg';
@@ -16,10 +16,6 @@ import jlow from '../images/board/jlow.png';
 import mitchell from '../images/board/mitchell.jpg';
 import ryan from '../images/board/ryan.png';
 
-
-
-
-
 export default function Board() {
 
   return(
@@ -30,9 +26,8 @@ export default function Board() {
         <img src={BoardTitle} style={{marginLeft: '5%', marginTop: '-34%', width: '25%'}} className="boardTitle" alt = "Title"/>
       </Box>
       <Box style={{backgroundImage:"linear-gradient(to bottom, white, #aab8c4)"}}>
-        <img src={groupImage} style={{marginLeft: '5%', marginTop: '-20%', marginBottom:"-5%", width: '90%', clipPath: 'inset(32% 0% 32% 0%)', filter:"drop-shadow(-4px -2px 3px grey)"} } alt = "Group Photo"/>
+        <img src={groupImage} style={{marginLeft: '5%', marginTop: '-20%', marginBottom:"-5%", width: '90%', clipPath: 'inset(32% 0% 32% 0%)', filter:"drop-shadow(-4px -2px 3px grey)"} } alt="GroupPhoto"/>
       </Box>
-
 
       <Box className="flipContainer">
       <Grid container direction="column">
