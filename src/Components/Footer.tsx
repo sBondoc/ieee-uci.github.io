@@ -50,20 +50,10 @@ function SubscribeBox() {
       justify="flex-start"
       alignItems="center"
     >
-<<<<<<< HEAD
-      <h5 style={{marginTop: "5%",marginBottom:"2%", textAlign:"center", letterSpacing:"2px"}}>Subscribe to our Mailing List:</h5>
-      <form action="https://formspree.io/xlepjdlk" method="POST">
-          <TextField id="outlined-basic" label="E-mail"  variant="outlined" margin="dense" className="textInput" name="e-mail address"/>
-          <TextField id="outlined-basic" label="First Name" variant="outlined" margin="dense" className="textInput" name="first name"/>
-          <TextField id="outlined-basic" label="Last Name"  variant="outlined" margin="dense" className="textInput" name="last name"/>
-
-          <button className="submit" type="submit" style={{marginTop: "5%", width: '30%', fontSize: '100%', textAlign: 'center'}}>Submit</button>
-=======
       <form action="https://ieeeuci.us1.list-manage.com/subscribe/post?u=1db8428cfa01005b3e732b737&amp;id=bb8c036f5b" 
         method="post" id="mc-embedded-subscribe-form" 
         name="mc-embedded-subscribe-form" className="validate" target="_blank">
           <button className="submit" type="submit" style={{marginTop: '50px', padding: '20px 50px 20px 50px', fontSize: '1.2vw',textAlign: 'center'}}>JOIN OUR MAILING LIST</button>
->>>>>>> 7375f738cf1dc9aa9900b5ad1039820123dcb844
       </form>
     </Grid>
   </Box>
