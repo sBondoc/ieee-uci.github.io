@@ -18,25 +18,27 @@ export default function Micromouse() {
   return(
     <div style={{overflow:"hidden"}}>
       <Header/>
-      <Box style={{zIndex: -99, position: 'fixed', backgroundImage: 'linear-gradient(to bottom,  rgb(32,33,40), black)', width: '100%', height:'100%'}} />
-
-      <Box paddingTop="3%"/>
-      <img src={MMImage} className="mainBodyImage" width="100%" alt="logo" style={{opacity:"60%"}}/>
-      <img src={MMTitle} className="mmTitle" style={{margin: '0% 5% 5%', width: '50%'}} alt="title" />
-
+      <Box className = "bkgdGrad"/>
+      <Box className = "headerBox">
+        <Typography variant="h6"className="title"> projects</Typography>
+        <Typography variant="h6" className="pageTitle"> micromouse</Typography>
+        <br/>
+        <svg className="divider"/>
+      </Box>
+      <img src={MMImage} width="100%" alt="logo" style={{opacity:"60%", marginTop:"-12%"}}/>
       <Grid container direction="column" alignItems="center" spacing={8}>
         <Grid container item direction="row" justify="space-evenly" alignItems="center" >
           <Grid item xs={3}>
             <img className="mmImg1" src={MMWhat} alt="Micromouse"/>
           </Grid>
           <Grid item sm={7}>
-            <Typography variant="h3" style={{marginBottom: "5%"}}>what is micromouse?</Typography>
+            <Typography variant="h3" style={{marginBottom: "5%", letterSpacing:"4px"}}>what is micromouse?</Typography>
             <Typography style={{textAlign: "left"}}>{introText}</Typography>
           </Grid>
         </Grid>
         <Grid container item  direction="row" justify="space-evenly" alignItems="center">
           <Grid item sm={7}>
-            <Typography variant="h3" style={{marginBottom: "5%"}}>who are we?</Typography>
+            <Typography variant="h3" style={{marginBottom: "5%", letterSpacing:"4px"}}>who are we?</Typography>
             <Typography style={{textAlign: "left"}}>{whoText}</Typography>
           </Grid>
           <Grid item xs={3}>
@@ -48,7 +50,7 @@ export default function Micromouse() {
             <img className="mmImg3" src={MMJoin} alt="Micromouse Maze"/>
           </Grid>
           <Grid item sm={7}>
-            <Typography variant="h3" style={{marginBottom: "5%"}}>why should you join?</Typography>
+            <Typography variant="h3" style={{marginBottom: "5%", letterSpacing:"4px"}}>why should you join?</Typography>
             <Typography style={{textAlign: "left"}}>{joinText}</Typography>
           </Grid>
         </Grid>

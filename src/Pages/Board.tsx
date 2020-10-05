@@ -25,9 +25,18 @@ export default function Board() {
     <div>
       <Header/>
       <Box className="bkgdGrad" />
-      <Box style={{paddingTop:"30%", marginBottom:"-10%"}}>
-        <img src={BoardTitle} style={{marginLeft: '5%', marginTop: '-34%', width: '25%'}} className="boardTitle" alt = "Title"/>
+      <Box className="bkgdGrad" />
+      <Box className = "headerBox">
+        <Typography variant="h6"className="title"> ABOUT</Typography>
+        <Typography variant="h6" className="pageTitle"> BOARD</Typography>
+        <br/>
+        <svg className="divider"/>
       </Box>
+
+      <Box style={{marginLeft:"10%", marginRight:"10%", marginBottom:"7%"}}>
+        <Typography variant="h4" style={{letterSpacing:"5px", paddingBottom:"2%", borderBottom:"1px solid #aab8c4"}}> 2020 - 2021 </Typography>
+      </Box>
+
       <Box className="flipContainer">
       <Grid container direction="column">
         <Grid className="flipRow" container item direction="row" justify="space-evenly">

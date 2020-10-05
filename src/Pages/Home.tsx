@@ -6,9 +6,10 @@ import banner from '../images/home_about_banner.svg'
 import kellyWeb from '../images/ws_kelly.png';
 import jackWeb from '../images/ws_jack.png';
 import salWeb from '../images/ws_salvador.png';
-import eventECP from '../images/ecp_fall_20.jpg';
-import eventECF from '../images/ecf_fall_20.png';
-import eventOPS from '../images/ops_fall_20.jpg';
+import eventECP from '../images/events/ecp_fall_20.jpg';
+import eventECF from '../images/events/ecf_fall_20.png';
+import eventOPS from '../images/events/ops_fall_20.jpg';
+import meeting1 from '../images/events/week1_fall20.png';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import Footer from '../Components/Footer';
@@ -142,7 +143,7 @@ function EventsButton(){
     history.push('/events');
   };
   return (
-    <Button onClick={() => handleClick('events')}>MORE EVENTS</Button>
+    <Button style={{letterSpacing:"2px"}} onClick={() => handleClick('events')}>MORE EVENTS</Button>
   )
 
 }
@@ -167,30 +168,42 @@ export default function Home() {
       <Box className="bkgdGrad" />
       <Box style={{position: 'relative', textAlign: 'center', paddingBottom: '15vw'}}>
         <img src={mainImage} className="mainBodyImage" alt="logo" style={{position: 'relative', opacity: "100%", width: '80%', top: '7vw', left: '-1%'}}/>
-        <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2.1vw', letterSpacing: '6px', top: '46%', left:'50%', transform: 'translate(-50%, 0%)', fontFamily: "Source Code Pro, monospace"
-}}><b>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</b></Typography>
+        <Typography variant="h4" className="advanceText" style={{position: 'absolute', fontSize: '2.1vw', letterSpacing: '6px', top: '46%', left:'50%', transform: 'translate(-50%, 0%)'
+}}>ADVANCING TECHNOLOGY<br/>FOR HUMANITY</Typography>
       </Box>
       <Box className="introBox">
         <Box style={{position:'absolute', width: '48%', top: '0%', left: '5%'}}>
           <Typography className='mainAboutText' style={{textAlign: "left", position: 'absolute', fontSize: "1.4vw", marginTop: '8%', marginBottom:'10%', marginLeft: '5%'}}>{introText}</Typography>
         </Box>
-        <SubscribeBox/>
-
+        <Box className = "subscribeBox">
+          <SubscribeBox/>
+        </Box>
       </Box>
 
       <Box style={{marginTop: "20%"}}>
         <Box style={{paddingLeft:"15%", paddingBottom:"5%"}}>
-          <Typography variant="h5"><b>/ FALL 2020</b></Typography>
+          <Typography variant="h5" style={{letterSpacing:"1px"}}>FALL 2020</Typography>
           <Box paddingTop="2%" paddingBottom="-2%">
-            <Typography variant="h4" style={{letterSpacing:"2px"}}><b>Upcoming Events</b></Typography>
+            <Typography variant="h4" style={{letterSpacing:"2px"}}>Upcoming Events</Typography>
           </Box>
         </Box>
         <Carousel style={{marginLeft:"15%", width: "70%", height: "auto"}}>
           <Carousel.Item>
             <img
               className="d-block w-100"
+              src={meeting1}
+              alt="1st slide"
+            />
+            <Carousel.Caption>
+              <h3></h3>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
               src={eventECP}
-              alt="First slide"
+              alt="2nd slide"
             />
             <Carousel.Caption>
               <h3></h3>
@@ -201,7 +214,7 @@ export default function Home() {
             <img
               className="d-block w-100"
               src={eventECF}
-              alt="Third slide"
+              alt="3rd slide"
             />
 
             <Carousel.Caption>
@@ -213,7 +226,7 @@ export default function Home() {
             <img
               className="d-block w-100"
               src={eventOPS}
-              alt="Third slide"
+              alt="4th slide"
             />
 
             <Carousel.Caption>
@@ -229,9 +242,9 @@ export default function Home() {
 
 
       <Box style={{position:"relative", marginTop: "25%", paddingLeft:"15%", paddingBottom:"10%"}}>
-        <Typography variant="h5"><b>/ SPRING 2020</b></Typography>
+        <Typography variant="h5" style={{letterSpacing:"1px"}}>SPRING 2020</Typography>
         <Box paddingTop="2%" paddingBottom="-2%">
-          <Typography variant="h4"><b>Website Design Competition Winners</b></Typography>
+          <Typography variant="h4" style={{letterSpacing:"2px"}}>Website Design Competition Winners</Typography>
         </Box>
       </Box>
 

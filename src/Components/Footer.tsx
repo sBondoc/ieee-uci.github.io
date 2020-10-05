@@ -12,7 +12,7 @@ import textBrace from '../images/textBrace.png';
 import textEntry from '../images/textentry.png'
 import diamond from '../images/ieee_diamond.svg';
 import IconButton from '@material-ui/core/IconButton';
-import {Typography, Box, Grid} from '@material-ui/core';
+import {Typography, Box, Grid, TextField} from '@material-ui/core';
 import '../Styles/index.css';
 
 
@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
   },
   textFieldControl: {
     width: 200,
-  }
+  },
+
 }));
 
 function SocialIcon(props: {src: string, link: string}){
@@ -34,7 +35,7 @@ function SocialIcon(props: {src: string, link: string}){
 
   return(
     <Box className={classes.socialIconBox}>
-      <IconButton className={classes.socialMediaIcon} href={props.link} target="_blank">
+      <IconButton className="socialIcon" href={props.link} target="_blank">
         <img width="100%" src={props.src} alt="socialmediaicon"/>
       </IconButton>
     </Box>
@@ -42,23 +43,22 @@ function SocialIcon(props: {src: string, link: string}){
 }
 
 function SubscribeBox() {
-  const classes = useStyles();
 
   return(
-  <Box className = "subscribeBox">
+  <Box >
     <Grid
       container
       direction="column"
       justify="flex-start"
       alignItems="center"
-      style={{marginTop: "5vh", marginRight: "5%", marginBottom: "5vh"}}
     >
-      <h3 style={{marginLeft:"-5%"}}>JOIN OUR MAILING LIST:</h3>
+      <h5 style={{marginTop: "5%",marginBottom:"2%", textAlign:"center", letterSpacing:"2px"}}>Subscribe to our Mailing List:</h5>
       <form action="https://formspree.io/xlepjdlk" method="POST">
-          <label> E-mail Address <input type="text" name="e-mail address"/><img className="textentry" src={textEntry} alt="emailentry"/></label>
-          <label> First Name <input type="text" name="first name"/><img className="textentry" src={textEntry} alt="fnameentry"/></label>
-          <label> Last Name <input type="text" name="last name"/><img className="textentry" src={textEntry} alt="lnameentry"/></label>
-          <button className="submit" type="submit" style={{marginLeft:'32%', marginRight:'35%', width: '30%', fontSize: '1.2vw',textAlign: 'center'}}>SUBMIT</button>
+          <TextField id="outlined-basic" label="E-mail"  variant="outlined" margin="dense" className="textInput" name="e-mail address"/>
+          <TextField id="outlined-basic" label="First Name" variant="outlined" margin="dense" className="textInput" name="first name"/>
+          <TextField id="outlined-basic" label="Last Name"  variant="outlined" margin="dense" className="textInput" name="last name"/>
+
+          <button className="submit" type="submit" style={{marginTop: "5%", width: '30%', fontSize: '100%', textAlign: 'center'}}>Submit</button>
       </form>
     </Grid>
   </Box>
